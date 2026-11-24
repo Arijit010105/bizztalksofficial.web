@@ -1,58 +1,891 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BizzTalks | Digital Marketing Agency – Social Media, Ads, Websites & Video</title>
-    <meta name="description" content="BizzTalks is a digital marketing and creative agency offering social media management, Meta (Facebook & Instagram) ads, Google Ads management, website and portfolio development, video editing and lead generation services." />
-    <meta name="keywords" content="digital marketing agency, social media management services, Facebook and Instagram ads, Google Ads management, website development services, portfolio website development, video editing services, social media marketing, lead generation services" />
-    <meta name="theme-color" content="#04060e" />
-    <meta name="author" content="BizzTalks" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="BizzTalks: business registration assistance, branding, websites, social media, Google and Meta ads, automation and growth. From paperwork to pixels. From ideas to impact.">
+<link rel="canonical" href="https://www.bizztalks.in/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BizzTalks | From paperwork to pixels">
+<meta property="og:description" content="Business setup, creative technology and digital growth under one roof.">
+<meta property="og:url" content="https://www.bizztalks.in/">
+<meta property="og:image" content="https://www.bizztalks.in/assets/logo/icon-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<meta name="theme-color" content="#04050a">
+<title>BizzTalks | Business Setup, Creative Technology &amp; Digital Growth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter+Tight:wght@400;500;600&family=Michroma&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an orbital command deck. A living particle sphere owns the hero; every section after it is
+   a quiet glass instrument panel on obsidian, lit by a cursor spotlight. Type does the heavy lifting. */
+:root{
+  color-scheme:dark;
+  --void:#04050a; --deep:#070a16; --panel:rgba(140,160,255,.04); --panel-2:rgba(140,160,255,.07);
+  --hair:rgba(180,195,255,.10); --hair-2:rgba(180,195,255,.22);
+  --blue:#4d7cff; --ice:#a9c1ff; --violet:#9b7bff; --silver:#c9cfdd; --white:#f4f6fb; --mute:#7e869c; --bad:#ff8597; --wa:#25d366;
+  --display:"Sora","Segoe UI",system-ui,sans-serif;
+  --tech:"Michroma","Sora",system-ui,sans-serif;
+  --body:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --gl:max(20px, env(safe-area-inset-left, 0px)); --gr:max(20px, env(safe-area-inset-right, 0px));
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{overflow-x:clip}
+.seal{overflow:hidden;border-radius:50%}
+.burger[aria-expanded="true"] i{box-shadow:none;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i::after{content:"";display:block;width:16px;height:1.5px;background:currentColor;transform:rotate(-90deg)}
+.burger i{transition:transform .3s}
+.drawer{max-height:calc(100svh - 110px);overflow-y:auto}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--void);color:var(--silver);font:400 16px/1.65 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:80;background:var(--void)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.06;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--blue);color:#fff}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;color:var(--white);text-wrap:balance}
+p{margin:0;max-width:62ch}
+.wrap{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+section{position:relative;padding-block:clamp(80px,11vw,150px)}
+.label{font:400 .62rem/1 var(--tech);letter-spacing:.28em;text-transform:uppercase;color:var(--ice);display:inline-flex;align-items:center;gap:12px}
+.label::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);box-shadow:0 0 12px var(--blue)}
+.h2{font:600 clamp(2rem,5.4vw,4.6rem)/1.02 var(--display);letter-spacing:-.035em;text-transform:uppercase}
+.h2 .dim{color:transparent;-webkit-text-stroke:1px rgba(201,207,221,.45)}
+.grad{background:linear-gradient(95deg,#fff 0%,var(--ice) 40%,var(--violet) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(1rem,1.4vw,1.15rem);color:var(--silver);line-height:1.7}
+.mute{color:var(--mute)}
+.head{display:grid;gap:22px;margin-bottom:clamp(40px,6vw,72px)}
+.head.split{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);align-items:end;gap:32px}
+@media (max-width:860px){.head.split{grid-template-columns:1fr}}
+:focus-visible{outline:2px solid var(--ice);outline-offset:3px;border-radius:8px}
 
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="BizzTalks" />
-    <meta property="og:title" content="BizzTalks – We Turn Ideas Into Digital Growth" />
-    <meta property="og:description" content="Digital marketing, social media management, Meta & Google Ads, websites, portfolios and video editing for growing businesses." />
-    <meta property="og:image" content="./og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="BizzTalks – We Turn Ideas Into Digital Growth" />
-    <meta name="twitter:description" content="Digital marketing, social media, ads, websites and video editing for growing businesses." />
-    <meta name="twitter:image" content="./og-image.jpg" />
+/* buttons */
+.btn{--bg:transparent;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 26px;border-radius:999px;
+  font:500 .74rem/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--white);cursor:pointer;
+  background:var(--bg);border:1px solid var(--hair-2);transition:transform .35s var(--ease),border-color .3s,background .3s,color .3s;overflow:hidden;isolation:isolate}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(120px circle at var(--x,50%) var(--y,50%),rgba(169,193,255,.25),transparent 60%);opacity:0;transition:opacity .3s}
+.btn:hover::after{opacity:1}.btn:hover{border-color:var(--ice)}
+.btn .arr{width:14px;height:14px;transition:transform .35s var(--ease)}.btn:hover .arr{transform:translateX(3px)}
+.btn.solid{background:linear-gradient(110deg,#fff,#dfe6ff);color:#05060c;border-color:transparent;font-weight:500}
+.btn.solid::after{background:radial-gradient(140px circle at var(--x,50%) var(--y,50%),rgba(77,124,255,.35),transparent 60%)}
+.btn.sm{padding:11px 18px;font-size:.66rem}
+.btn.wa{background:var(--wa);color:#03170a;border-color:var(--wa)}
+.tlink{background:none;border:0;padding:0;font:500 .68rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ice);cursor:pointer;text-decoration:none;border-bottom:1px solid rgba(169,193,255,.3);padding-bottom:3px}
+.tlink:hover{border-color:var(--ice);color:#fff}
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "BizzTalks",
-        "description": "Digital marketing and creative agency: social media management, Meta ads, Google Ads, website and portfolio development, video editing, content creation and marketing automation.",
-        "email": "managerialtalk@gmail.com",
-        "telephone": "+91-97489-89711",
-        "founder": { "@type": "Person", "name": "Arijit Banerjee", "url": "https://arijit-banerjee-portfolio.vercel.app/" },
-        "sameAs": ["https://www.instagram.com/biz.talksofficial?bqrl=MW5zMHBrMTVsbXU3Mw=="],
-        "knowsAbout": ["Digital Marketing", "Social Media Management", "Meta Ads", "Google Ads", "Website Development", "Video Editing", "Search Engine Optimisation", "Marketing Automation"]
-      }
-    </script>
+/* nav */
+.nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 14px);left:0;right:0;z-index:60;padding-left:var(--gl);padding-right:var(--gr)}
+.nav-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 10px 10px 22px;border-radius:999px;
+  border:1px solid transparent;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.solid .nav-in{background:rgba(7,9,18,.7);border-color:var(--hair);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:400 .86rem var(--tech);letter-spacing:.14em;color:var(--white)}
+.mark{height:46px;width:auto;flex:none;display:block;filter:drop-shadow(0 0 10px rgba(169,193,255,.35))}
+.nav-in{padding-block:6px}
+.flogo{height:120px;width:auto;display:block;filter:drop-shadow(0 0 30px rgba(77,124,255,.25))}
+/* case studies */
+.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:clamp(48px,7vw,90px)}
+.case{padding:28px;display:grid;gap:14px;align-content:start}
+.case .client{font:400 .58rem var(--tech);letter-spacing:.22em;text-transform:uppercase;color:var(--ice)}
+.case h3{font:600 1.25rem/1.25 var(--display);text-transform:uppercase;letter-spacing:-.01em}
+.case p{font-size:.9rem;color:var(--mute)}
+.case ul{list-style:none;padding:14px 0 0;margin:auto 0 0;border-top:1px solid var(--hair);display:grid;gap:7px;font-size:.85rem;color:var(--silver)}
+.case ul li::before{content:"→ ";color:var(--blue)}
+.subhead{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-top:clamp(56px,8vw,100px)}
+.subhead h3{font:600 clamp(1.4rem,3vw,2.2rem)/1.1 var(--display);text-transform:uppercase;letter-spacing:-.03em}
+.wd ul{list-style:none;padding:0;margin:0;display:grid;gap:7px;font-size:.92rem}
+.wd ul li::before{content:"→ ";color:var(--blue)}
+.svcnote{align-content:start}
+.svcnote .art{display:grid;place-items:center}
+@media (max-width:980px){.cases{grid-template-columns:1fr}}
+/* real imagery */
+.tile .art.ph{object-fit:cover;object-position:top center;height:auto}
+.tile .cnt{position:absolute;top:12px;right:12px;font:400 .55rem var(--tech);letter-spacing:.16em;color:#fff;background:rgba(4,5,10,.7);border:1px solid var(--hair-2);border-radius:999px;padding:6px 9px;backdrop-filter:blur(6px)}
+.tile{position:relative}
+#works{align-items:start;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+#worksTxt{margin-top:14px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.txtgrid:empty{display:none}
+@media (max-width:1000px){#worksTxt{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){#worksTxt{grid-template-columns:1fr}}
+.tile.txt .tag{white-space:nowrap;letter-spacing:.14em;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.tile.txt{cursor:default;align-content:start}
+.tile.txt:hover{transform:none}
+.tile.txt .meta{padding:24px 22px;gap:10px;height:100%;align-content:start}
+.tile.txt b{font-size:1.15rem;line-height:1.25}
+.tile.txt .who{font-size:.8rem;color:var(--ice)}
+.tile.txt p{font-size:.88rem;color:var(--mute)}
+.tile.txt ul{list-style:none;padding:12px 0 0;margin:2px 0 0;border-top:1px solid var(--hair);display:grid;gap:6px;font-size:.84rem;color:var(--silver)}
+.tile.txt ul li::before{content:"→ ";color:var(--blue)}
+.tile.txt .acts{display:flex;gap:16px;flex-wrap:wrap;margin-top:6px}
+.slides{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.slides figure{margin:0;flex:0 0 auto;width:min(260px,70vw);scroll-snap-align:start;display:grid;gap:8px}
+.slides img{width:100%;height:auto;border-radius:14px;border:1px solid var(--hair);display:block;background:#0a0d1a}
+.slides figcaption{font-size:.78rem;color:var(--mute)}
+/* feed wall: two rows moving in opposite directions, like the service strip */
+.wall-wrap{position:relative;margin-top:26px;display:grid;gap:16px;
+  -webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.wall{overflow:hidden}
+.wall-track{display:flex;gap:16px;width:max-content;animation:wmq 60s linear infinite}
+.wall.rev .wall-track{animation-direction:reverse;animation-duration:68s}
+.wall:hover .wall-track,.wall:focus-within .wall-track{animation-play-state:paused}
+@keyframes wmq{to{transform:translateX(calc(-50% - 8px))}}
+.wall figure{margin:0;flex:0 0 auto;width:clamp(190px,20vw,250px);display:grid;gap:10px}
+.wall .frame{border-radius:18px;overflow:hidden;border:1px solid var(--hair);background:#0a0d1a;aspect-ratio:4/5;transition:transform .5s var(--ease),border-color .3s,box-shadow .4s}
+.wall figure:hover .frame{transform:translateY(-6px) scale(1.02);border-color:var(--hair-2);box-shadow:0 24px 60px rgba(77,124,255,.22)}
+.wall img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.wall figcaption{display:grid;gap:2px}
+.wall figcaption b{font:600 .88rem var(--body);color:#fff}
+.wall figcaption span{font:400 .54rem var(--tech);letter-spacing:.16em;text-transform:uppercase;color:var(--ice)}
+@media (prefers-reduced-motion:reduce){.wall{overflow-x:auto}.wall-track{animation:none}.wall-wrap{-webkit-mask:none;mask:none}}
+/* results */
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.metric{padding:26px 24px;display:grid;gap:10px;align-content:start}
+.metric .big{font:600 clamp(2.4rem,4.6vw,3.8rem)/1 var(--display);letter-spacing:-.05em;color:#fff;font-variant-numeric:tabular-nums}
+.metric .lbl{font:600 .95rem var(--body);color:var(--silver)}
+.metric .row2{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;border-top:1px solid var(--hair);padding-top:12px;margin-top:4px}
+.up{font:500 .74rem var(--mono);color:#5fe3a1;background:rgba(95,227,161,.1);border:1px solid rgba(95,227,161,.25);border-radius:999px;padding:4px 9px}
+.per{font:400 .55rem var(--tech);letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.spark{width:100%;height:46px;display:block}
+.src{font-size:.8rem;color:var(--mute);margin-top:16px;max-width:none}
+.growth{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:14px}
+.gcard{padding:24px;display:grid;gap:8px;align-content:start}
+.gcard .brandn{font:400 .56rem var(--tech);letter-spacing:.22em;text-transform:uppercase;color:var(--ice)}
+.gcard .gnum{font:600 clamp(1.9rem,3.4vw,2.7rem)/1 var(--display);letter-spacing:-.04em;color:#fff}
+.gcard .gl{font-size:.88rem;color:var(--silver)}
+.gcard ul{list-style:none;padding:12px 0 0;margin:6px 0 0;border-top:1px solid var(--hair);display:grid;gap:6px;font-size:.84rem;color:var(--mute)}
+.gcard ul li::before{content:"↗ ";color:#5fe3a1}
+@media (max-width:1000px){.metrics,.growth{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.metrics,.growth{grid-template-columns:1fr}}
+/* founder photo + certs */
+.portrait{position:relative;max-width:420px;width:100%;justify-self:center;margin:0}
+.portrait img{width:100%;height:auto;display:block;border-radius:28px;border:1px solid var(--hair-2);box-shadow:0 40px 120px rgba(77,124,255,.28)}
+.portrait .ringtext{position:absolute;width:150px;height:150px;right:-30px;bottom:-30px;animation:rot 30s linear infinite;background:var(--void);border-radius:50%;border:1px solid var(--hair-2)}
+.portrait .ringtext text{font:400 9.5px var(--tech);letter-spacing:3px;fill:var(--ice)}
+.portrait figcaption{position:absolute;left:18px;top:18px;font:400 .54rem var(--tech);letter-spacing:.2em;text-transform:uppercase;color:#fff;background:rgba(4,5,10,.6);border:1px solid var(--hair-2);border-radius:999px;padding:7px 11px;backdrop-filter:blur(6px)}
+.certs{display:flex;gap:12px;flex-wrap:wrap}
+.cert{display:flex;gap:12px;align-items:center;padding:10px 14px 10px 10px;border-radius:14px;max-width:340px}
+.cert img{width:76px;height:auto;border-radius:6px;display:block}
+.cert b{font:600 .86rem/1.3 var(--body);color:#fff;display:block}
+.cert span{font-size:.76rem;color:var(--mute)}
+@media (max-width:860px){.portrait{max-width:300px}.portrait .ringtext{width:110px;height:110px;right:-14px;bottom:-14px}}
+.links{display:flex;gap:4px}
+.links a{font:500 .68rem var(--mono);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--silver);padding:10px 14px;border-radius:999px;transition:background .25s,color .25s}
+.links a:hover{background:var(--panel-2);color:#fff}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--hair-2);background:transparent;color:#fff;cursor:pointer;place-items:center}
+.burger i{display:block;width:16px;height:1.5px;background:currentColor;box-shadow:0 5px 0 currentColor,0 -5px 0 currentColor}
+.drawer{max-width:1280px;margin:10px auto 0;border-radius:24px;border:1px solid var(--hair);background:rgba(7,9,18,.94);backdrop-filter:blur(18px);padding:10px 22px 22px;display:grid}
+.drawer a{font:600 1.4rem var(--display);text-transform:uppercase;letter-spacing:-.02em;text-decoration:none;color:#fff;padding:14px 0;border-bottom:1px solid var(--hair)}
+.drawer .btn{margin-top:18px;font:500 .74rem var(--mono);padding:16px;border-bottom:0}
+@media (max-width:1020px){.links,.nav-cta{display:none}.burger{display:grid}}
 
-    <style>
-      html,body{background:#04060e;margin:0}
-      #boot{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:#04060e;transition:opacity .6s ease,visibility .6s ease}
-      #boot.done{opacity:0;visibility:hidden}
-      #boot .ring{width:74px;height:96px;border:2px solid rgba(217,225,255,.85);border-radius:999px;position:relative;box-shadow:0 0 24px rgba(124,156,255,.25),inset 0 0 18px rgba(124,156,255,.15);animation:bootPulse 1.4s ease-in-out infinite}
-      #boot .ring::after{content:"";position:absolute;left:-14px;right:-14px;top:50%;height:2px;background:linear-gradient(90deg,transparent,#f5f7ff,transparent);animation:bootScan 1.4s ease-in-out infinite}
-      #boot p{margin-top:22px;font:600 12px/1 system-ui,sans-serif;letter-spacing:.38em;color:#8f98b8;text-align:center}
-      @keyframes bootPulse{50%{transform:scale(1.06);box-shadow:0 0 40px rgba(124,156,255,.4),inset 0 0 22px rgba(124,156,255,.25)}}
-      @keyframes bootScan{0%{transform:translateY(-34px);opacity:0}50%{opacity:1}100%{transform:translateY(34px);opacity:0}}
-      @media (prefers-reduced-motion:reduce){#boot .ring,#boot .ring::after{animation:none}}
-    </style>
-  </head>
-  <body>
-    <div id="boot" aria-hidden="true"><div><div class="ring"></div><p>BIZZTALKS</p></div></div>
-    <div id="root"></div>
-    <noscript><p style="color:#d9e1ff;font-family:sans-serif;padding:24px">BizzTalks – digital marketing agency. Email managerialtalk@gmail.com or WhatsApp +91 97489 89711.</p></noscript>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+/* hero */
+.hero{padding-block:calc(env(safe-area-inset-top,0px) + 130px) 70px;min-height:min(900px,100svh);display:flex;align-items:flex-end;overflow:hidden;
+  margin-top:calc(-1 * env(safe-area-inset-top,0px))}
+#gl{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(60% 50% at 70% 40%,rgba(77,124,255,.18),transparent 70%),linear-gradient(180deg,rgba(4,5,10,0) 55%,var(--void) 98%)}
+.hero-fallback{position:absolute;inset:0;z-index:0;background:radial-gradient(40% 45% at 68% 42%,rgba(155,123,255,.35),rgba(77,124,255,.18) 45%,transparent 70%)}
+.hero .wrap{width:100%}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:clamp(24px,4vw,44px)}
+.hud{font:400 .6rem var(--tech);letter-spacing:.24em;color:var(--mute);text-transform:uppercase;display:flex;gap:18px;flex-wrap:wrap}
+.hud b{color:var(--ice);font-weight:400}
+.hero h1{font:700 clamp(2.5rem,8.6vw,8.2rem)/.92 var(--display);letter-spacing:-.05em;text-transform:uppercase;max-width:12ch}
+.hero h1 .l2{display:block;font-weight:300;letter-spacing:-.04em}
+.hero-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;margin-top:clamp(28px,4vw,48px);padding-top:28px;border-top:1px solid var(--hair)}
+.hero-bottom p{font-size:clamp(1rem,1.35vw,1.12rem);max-width:54ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.ticker{display:flex;align-items:center;gap:14px;margin-top:22px;font:500 .74rem var(--mono);color:var(--mute);letter-spacing:.06em}
+.ticker b{color:#fff;font-weight:500;display:inline-block;min-width:19ch}
+.ticker i{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.15)}
+@media (max-width:820px){.hero-bottom{grid-template-columns:1fr}.hero{min-height:0;padding-top:calc(env(safe-area-inset-top,0px) + 340px)}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--hair);overflow:hidden;padding-block:22px;position:relative;z-index:2;background:linear-gradient(90deg,var(--void),transparent 12%,transparent 88%,var(--void))}
+.track{display:flex;gap:48px;width:max-content;animation:mq 46s linear infinite}
+.track span{font:600 clamp(1.1rem,2.2vw,1.7rem) var(--display);letter-spacing:-.02em;text-transform:uppercase;color:var(--white);display:flex;align-items:center;gap:48px;white-space:nowrap}
+.track span:nth-child(even){color:transparent;-webkit-text-stroke:1px rgba(201,207,221,.5)}
+.track span::after{content:"";width:10px;height:10px;transform:rotate(45deg);background:linear-gradient(135deg,var(--blue),var(--violet))}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* spotlight panels */
+.spot{position:relative;border:1px solid var(--hair);border-radius:24px;background:linear-gradient(170deg,var(--panel-2),rgba(140,160,255,.012));overflow:hidden;isolation:isolate}
+.spot::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .4s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(77,124,255,.14),transparent 55%)}
+.spot::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;z-index:-1;opacity:0;transition:opacity .4s;
+  background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(169,193,255,.55),transparent 60%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.spot:hover::before,.spot:hover::after{opacity:1}
+
+/* stages */
+.stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.stg{padding:28px 24px 26px;display:grid;gap:14px;align-content:start;min-height:340px;cursor:default}
+.stg .num{font:200 clamp(3.4rem,6vw,5.4rem)/.9 var(--display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(169,193,255,.5)}
+.stg h3{font:600 1.5rem var(--display);text-transform:uppercase;letter-spacing:-.02em}
+.stg .kick{font:400 .58rem var(--tech);letter-spacing:.24em;color:var(--ice);text-transform:uppercase}
+.stg p{font-size:.92rem;color:var(--mute)}
+.stg ul{list-style:none;margin:auto 0 0;padding:16px 0 0;border-top:1px solid var(--hair);display:grid;gap:6px;font-size:.84rem;color:var(--silver)}
+.stg ul li::before{content:"→ ";color:var(--blue)}
+.flow{height:1px;margin:26px 0 0;background:linear-gradient(90deg,transparent,var(--blue),var(--violet),transparent);position:relative}
+.flow::after{content:"";position:absolute;top:-3px;left:0;width:60px;height:7px;border-radius:4px;background:radial-gradient(closest-side,#fff,rgba(169,193,255,0));animation:run 4.5s linear infinite}
+@keyframes run{to{left:calc(100% - 60px)}}
+@media (max-width:1000px){.stages{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.stages{grid-template-columns:1fr}.stg{min-height:0}}
+
+/* services index */
+.index{border-top:1px solid var(--hair)}
+.div{border-bottom:1px solid var(--hair)}
+.div-h{width:100%;display:grid;grid-template-columns:70px minmax(0,1fr) auto;gap:20px;align-items:center;background:none;border:0;color:inherit;text-align:left;cursor:pointer;padding:26px 4px;font:inherit;position:relative}
+.div-h::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(77,124,255,.10),transparent 60%);opacity:0;transition:opacity .35s}
+.div-h:hover::before,.div.open .div-h::before{opacity:1}
+.div-h .code{font:400 .66rem var(--tech);letter-spacing:.2em;color:var(--mute);position:relative}
+.div-h .t{font:600 clamp(1.15rem,2.8vw,2.3rem)/1.1 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:var(--silver);transition:color .3s,transform .5s var(--ease);position:relative}
+.div-h:hover .t,.div.open .div-h .t{color:#fff;transform:translateX(8px)}
+.div-h .pm{width:40px;height:40px;border-radius:50%;border:1px solid var(--hair-2);display:grid;place-items:center;position:relative;transition:transform .5s var(--ease),background .3s}
+.div-h .pm::before,.div-h .pm::after{content:"";position:absolute;width:12px;height:1.5px;background:#fff}
+.div-h .pm::after{transform:rotate(90deg);transition:transform .4s var(--ease)}
+.div.open .div-h .pm{background:var(--blue);border-color:var(--blue)}.div.open .div-h .pm::after{transform:rotate(0)}
+.div.open .div-h .code{color:var(--ice)}
+.div-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.div.open .div-b{grid-template-rows:1fr}
+.div-b>div{overflow:hidden;min-width:0}
+.div-in{padding:4px 4px 40px 94px;display:grid;gap:26px}
+.div-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end}
+.div-intro h4{font:600 clamp(1.05rem,1.8vw,1.35rem) var(--display);text-transform:uppercase;letter-spacing:-.01em;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.chips li{font-size:.84rem;padding:9px 15px;border-radius:999px;border:1px solid var(--hair);background:var(--panel);color:var(--silver);transition:border-color .25s,color .25s}
+.chips li:hover{border-color:var(--hair-2);color:#fff}
+.grp{display:grid;gap:12px}
+.grp h5{margin:0;font:400 .6rem var(--tech);letter-spacing:.24em;text-transform:uppercase;color:var(--ice)}
+.rcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.rc{padding:18px;border-radius:18px;display:grid;gap:10px;align-content:start}
+.rc h6{margin:0;font:600 .95rem/1.35 var(--body);color:#fff}
+.rc p{font-size:.84rem;color:var(--mute)}
+.rc .fit{font-size:.82rem;color:var(--silver);border-top:1px dashed var(--hair-2);padding-top:10px}
+.rc .fit b{display:block;font:400 .56rem var(--tech);letter-spacing:.2em;color:var(--ice);text-transform:uppercase;margin-bottom:5px}
+.rc .acts{display:flex;gap:16px;flex-wrap:wrap;margin-top:4px}
+.legal{font-size:.8rem;color:var(--mute);border-left:2px solid var(--violet);padding:4px 0 4px 16px;max-width:90ch}
+@media (max-width:760px){.div-h{grid-template-columns:44px minmax(0,1fr) auto;gap:12px}.div-in{padding-left:4px}.div-intro{grid-template-columns:1fr}}
+
+/* launch */
+.launch{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,72px);align-items:start}
+.launch-l{position:sticky;top:120px;display:grid;gap:24px}
+.orbit{aspect-ratio:1;max-width:340px;width:100%;position:relative;margin-top:10px}
+.orbit svg{width:100%;height:100%;overflow:visible}
+.steps{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;padding:24px;align-items:start}
+.step .sn{font:400 .62rem var(--tech);letter-spacing:.2em;color:var(--ice);border:1px solid var(--hair-2);border-radius:999px;padding:9px 12px;white-space:nowrap}
+.step h3{font:600 1.2rem var(--display);text-transform:uppercase;letter-spacing:-.01em;margin-bottom:6px}
+.step p{font-size:.92rem;color:var(--mute)}
+@media (max-width:900px){.launch{grid-template-columns:1fr}.launch-l{position:static}.orbit{display:none}}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.b{padding:26px;display:grid;gap:12px;align-content:start}
+.b svg.i{width:26px;height:26px;color:var(--ice)}
+.b h3{font:600 1.08rem/1.3 var(--display);text-transform:uppercase;letter-spacing:-.01em}
+.b p{font-size:.9rem;color:var(--mute)}
+.b1{grid-column:span 4}.b2{grid-column:span 2}.b3,.b4,.b5{grid-column:span 2}.b6{grid-column:span 3}.b7{grid-column:span 3}
+.b8{grid-column:span 6;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:24px}
+.b1 h3{font-size:clamp(1.3rem,2.4vw,1.9rem)}
+@media (max-width:900px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}.b1,.b8{grid-column:span 2}.b2,.b3,.b4,.b5,.b6,.b7{grid-column:span 1}.b8{grid-template-columns:1fr}}
+@media (max-width:560px){.bento{grid-template-columns:1fr}.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{grid-column:auto}}
+
+/* work */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.filters button{font:500 .66rem var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:10px 16px;border-radius:999px;border:1px solid var(--hair);background:transparent;color:var(--mute);cursor:pointer;transition:all .25s}
+.filters button:hover{color:#fff;border-color:var(--hair-2)}
+.filters button[aria-pressed="true"]{background:#fff;color:#05060c;border-color:#fff}
+.works{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tile{padding:0;display:grid;text-align:left;color:inherit;font:inherit;cursor:pointer;transition:transform .5s var(--ease)}
+.tile:hover{transform:translateY(-4px)}
+.tile .art{aspect-ratio:4/3;width:100%;display:block;background:radial-gradient(80% 80% at 70% 20%,rgba(77,124,255,.22),transparent 60%),#080b18;border-bottom:1px solid var(--hair)}
+.tile .meta{padding:16px 18px 18px;display:grid;gap:6px}
+.tile b{font:600 1rem var(--display);color:#fff;text-transform:uppercase;letter-spacing:-.01em}
+.tile span{font-size:.82rem;color:var(--mute)}
+.tag{justify-self:start;font:400 .54rem var(--tech);letter-spacing:.18em;text-transform:uppercase;color:var(--ice);border:1px solid var(--hair-2);border-radius:999px;padding:5px 9px}
+.wd{margin-top:16px;padding:clamp(22px,3vw,34px);display:grid;gap:14px}
+.wd-h{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.wd h3{font:600 1.5rem var(--display);text-transform:uppercase;margin-top:10px}
+@media (max-width:1100px){.works{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.works{grid-template-columns:1fr}}
+
+/* founder */
+.founder{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,90px);align-items:center}
+.seal{position:relative;aspect-ratio:1;max-width:440px;width:100%;justify-self:center}
+.seal .ringtext{position:absolute;inset:0;width:100%;height:100%;animation:rot 40s linear infinite}
+.seal .ringtext text{font:400 7.2px var(--tech);letter-spacing:3.2px;fill:var(--ice)}
+@keyframes rot{to{transform:rotate(360deg)}}
+.seal .core{position:absolute;inset:16%;border-radius:50%;display:grid;place-items:center;overflow:hidden;
+  background:radial-gradient(circle at 35% 25%,rgba(169,193,255,.35),transparent 50%),radial-gradient(circle at 70% 85%,rgba(155,123,255,.5),transparent 55%),#0a0e20;border:1px solid var(--hair-2);
+  box-shadow:0 0 120px rgba(77,124,255,.25),inset 0 0 60px rgba(0,0,0,.6)}
+.seal .core b{font:200 clamp(3.4rem,9vw,6.6rem)/1 var(--display);letter-spacing:-.08em;color:#fff}
+.seal .core small{position:absolute;bottom:18%;font:400 .5rem var(--tech);letter-spacing:.24em;color:var(--mute);text-transform:uppercase}
+.fcopy{display:grid;gap:22px;min-width:0}
+.fname{font:700 clamp(2.4rem,6.5vw,5.6rem)/.92 var(--display);letter-spacing:-.05em;text-transform:uppercase}
+.fname span{display:block;color:transparent;-webkit-text-stroke:1px rgba(201,207,221,.5);font-weight:300}
+.fq{font:300 clamp(1.1rem,1.8vw,1.45rem)/1.4 var(--display);color:#fff;letter-spacing:-.01em;max-width:34ch}
+@media (max-width:860px){.founder{grid-template-columns:1fr}.seal{max-width:300px}}
+
+/* process */
+.proc{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border:1px solid var(--hair);border-radius:24px;overflow:hidden;position:relative}
+.proc .bar{position:absolute;left:0;top:0;height:2px;width:100%;background:linear-gradient(90deg,var(--blue),var(--violet));transform-origin:left;transform:scaleX(var(--p,1))}
+.ps{padding:34px 24px;border-right:1px solid var(--hair);display:grid;gap:12px;align-content:start;background:rgba(7,10,22,.5);transition:background .35s}
+.ps:last-of-type{border-right:0}
+.ps:hover{background:rgba(77,124,255,.07)}
+.ps .n{font:200 2.6rem/1 var(--display);color:transparent;-webkit-text-stroke:1px rgba(169,193,255,.55);letter-spacing:-.05em}
+.ps h3{font:600 1.05rem var(--display);text-transform:uppercase;letter-spacing:.02em}
+.ps p{font-size:.88rem;color:var(--mute)}
+@media (max-width:900px){.proc{grid-template-columns:1fr}.ps{border-right:0;border-bottom:1px solid var(--hair)}.ps:last-of-type{border-bottom:0}.proc .bar{width:2px;height:100%;transform-origin:top;transform:scaleY(var(--p,1))}}
+
+/* contact */
+.cta-big{font:700 clamp(3rem,12vw,11rem)/.85 var(--display);letter-spacing:-.06em;text-transform:uppercase;margin-bottom:clamp(36px,5vw,60px)}
+.cta-big span{color:transparent;-webkit-text-stroke:1px rgba(201,207,221,.45);font-weight:300}
+.contact{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:18px;align-items:start}
+form{padding:clamp(22px,3.5vw,42px);display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{display:grid;gap:8px;min-width:0}
+label{font:400 .56rem var(--tech);letter-spacing:.2em;text-transform:uppercase;color:var(--silver)}
+label em{font-style:normal;color:var(--mute)}
+input,select,textarea{width:100%;font:500 1rem var(--body);color:#fff;background:rgba(4,5,10,.55);border:1px solid var(--hair);border-radius:14px;padding:14px 16px;transition:border-color .25s,box-shadow .25s}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ice) 50%),linear-gradient(135deg,var(--ice) 50%,transparent 50%);background-position:calc(100% - 22px) 52%,calc(100% - 17px) 52%;background-size:5px 5px;background-repeat:no-repeat;padding-right:40px}
+select option{background:#0a0d1a}
+textarea{min-height:130px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#565d72}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(77,124,255,.18)}
+.f.bad input,.f.bad select,.f.bad textarea{border-color:var(--bad)}
+.err{font-size:.78rem;color:var(--bad)}
+.send{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:6px}
+.send .btn{padding-inline:10px}
+.status{font-size:.86rem;color:var(--mute);min-height:1.5em;max-width:none}
+.side{display:grid;gap:14px}
+.card{padding:22px;display:grid;gap:10px}
+.card .k{font:400 .56rem var(--tech);letter-spacing:.22em;text-transform:uppercase;color:var(--ice)}
+.card .v{font:600 clamp(1.1rem,2vw,1.4rem) var(--display);color:#fff;letter-spacing:-.01em;user-select:all;overflow-wrap:anywhere}
+.card .acts{display:flex;gap:18px;flex-wrap:wrap}
+@media (max-width:920px){.contact{grid-template-columns:1fr}}
+@media (max-width:580px){.row,.send{grid-template-columns:1fr}}
+
+footer{position:relative;z-index:2;border-top:1px solid var(--hair);padding-block:56px 40px;overflow:hidden}
+.ft{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.ft nav{display:flex;gap:22px;flex-wrap:wrap}
+.wordmark{font:700 clamp(3.4rem,17vw,16rem)/.8 var(--display);letter-spacing:-.07em;text-transform:uppercase;margin-top:56px;
+  background:linear-gradient(180deg,rgba(201,207,221,.18),rgba(201,207,221,0) 85%);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap;user-select:none}
+.fine{font-size:.78rem;color:var(--mute);max-width:90ch;margin-top:26px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"BizzTalks","url":"https://www.bizztalks.in/","logo":"https://www.bizztalks.in/assets/logo/icon-512.png","email":"managerialtalk@gmail.com","telephone":"+91-97489-89711","founder":{"@type":"Person","name":"Arijit Banerjee","sameAs":"https://www.linkedin.com/in/arijit-banerjee-01012005jan"},"sameAs":["https://www.linkedin.com/company/bizztalkss/","https://www.instagram.com/biz.talksofficial"]}</script>
+</head>
+<body>
+
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="BizzTalks home">
+      <img class="mark" src="assets/logo/bizztalks-logo-sm.webp" alt="" width="33" height="44">
+      BIZZTALKS
+    </a>
+    <nav class="links" aria-label="Main"><a href="#home">Home</a><a href="#about">About</a><a href="#solutions">Solutions</a><a href="#work">Our Work</a><a href="#results">Results</a><a href="#founder">Founder</a><a href="#contact">Contact</a></nav>
+    <a class="btn solid sm nav-cta" href="#contact" data-mag>Start your project</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><i></i></button>
+  </div>
+  <div class="drawer" id="drawer" hidden>
+    <a href="#home">Home</a><a href="#about">About</a><a href="#solutions">Solutions</a><a href="#work">Our Work</a><a href="#results">Results</a><a href="#founder">Founder</a><a href="#contact">Contact</a>
+    <a class="btn solid" href="#contact">Start your project</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="label">From paperwork to pixels · From ideas to impact</span>
+      <div class="hud" aria-hidden="true"><span>BUSINESS SETUP <b>●</b></span><span>CREATIVE TECHNOLOGY <b>●</b></span><span>DIGITAL GROWTH <b>●</b></span></div>
+    </div>
+    <h1>Your business.<span class="l2 grad">Reimagined for the digital world.</span></h1>
+    <div class="hero-bottom">
+      <div>
+        <p>From business registration and brand identity to websites, marketing and customer acquisition. Everything your business needs, under one roof.</p>
+        <div class="ticker" aria-hidden="true"><i></i>Ask us about <b id="tick">GST registration</b></div>
+      </div>
+      <div class="ctas">
+        <a class="btn solid" href="#contact" data-mag>Let's build your business <svg class="arr" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        <a class="btn" href="#solutions" data-mag>Explore our solutions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="head split">
+      <div style="display:grid;gap:22px"><span class="label">The complete business ecosystem</span><h2 class="h2">From the first paper <span class="dim">to your first customer.</span></h2></div>
+      <p class="lead">Building a business requires more than one service. It requires the right people, tools, strategy and execution at every stage. BizzTalks coordinates all four.</p>
+    </div>
+    <div class="stages" id="stages"></div>
+    <div class="flow" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section id="solutions" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head split">
+      <div style="display:grid;gap:22px"><span class="label">Service catalogue · 12 divisions</span><h2 class="h2">Everything, <span class="dim">organised.</span></h2></div>
+      <p class="lead">Open a division to see what it covers. Every enquiry button fills in the contact form for you, so your message reaches us with the right context.</p>
+    </div>
+    <div class="index" id="index"></div>
+  </div>
+</section>
+
+<section id="launch">
+  <div class="wrap launch">
+    <div class="launch-l">
+      <span class="label">Business launch experience</span>
+      <h2 class="h2">You bring the idea. <span class="dim">We help build the foundation.</span></h2>
+      <p class="lead">Launching a business can feel complicated. From documentation and registration assistance to branding, websites and marketing, BizzTalks helps coordinate the journey.</p>
+      <div><a class="btn solid" href="#contact" data-enquire="Complete Business Launch Support" data-mag>Start your business journey</a></div>
+      <div class="orbit" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><linearGradient id="og" x1="0" x2="1"><stop offset="0" stop-color="#4d7cff"/><stop offset="1" stop-color="#9b7bff"/></linearGradient></defs>
+          <circle cx="100" cy="100" r="86" fill="none" stroke="rgba(180,195,255,.14)"/>
+          <circle cx="100" cy="100" r="58" fill="none" stroke="rgba(180,195,255,.10)" stroke-dasharray="2 5"/>
+          <circle cx="100" cy="100" r="86" fill="none" stroke="url(#og)" stroke-width="1.6" stroke-dasharray="540" stroke-dashoffset="540" id="orbArc" transform="rotate(-90 100 100)"/>
+          <circle cx="100" cy="100" r="16" fill="url(#og)"/><circle cx="100" cy="100" r="28" fill="none" stroke="rgba(169,193,255,.3)"/>
+          <g id="orbDots"></g>
+        </svg>
+      </div>
+    </div>
+    <div class="steps" id="steps"></div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="head"><span class="label">Why BizzTalks</span><h2 class="h2">One partner. Multiple capabilities. <span class="dim">A connected approach.</span></h2></div>
+    <div class="bento" id="bento"></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="head split">
+      <div style="display:grid;gap:22px"><span class="label">Our work</span><h2 class="h2">Work for real brands, <span class="dim">made for the feed.</span></h2></div>
+      <p class="lead">Websites, social content, campaigns and design for clinic and salon brands including Mister Hair, Miss Skin, HEN Salon and Folik &amp; Lumea. Select any project to see what was delivered.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+    <div class="works" id="works"></div>
+    <div class="spot wd" id="wd" hidden></div>
+    <div class="works txtgrid" id="worksTxt"></div>
+    <div class="subhead"><h3>Made for the feed</h3><span class="label">Hover to pause</span></div>
+    <p class="mute" style="margin-top:12px">Carousels and posts designed for Mister Hair, Miss Skin, HEN Salon and Folik &amp; Lumea.</p>
+    <div class="wall-wrap" aria-label="Carousel and post gallery"><div class="wall" id="wallA"></div><div class="wall rev" id="wallB"></div></div>
+    <div class="subhead"><h3>Case studies</h3><span class="label">Strategy · Content · Campaigns</span></div>
+    <div class="cases" id="cases"></div>
+  </div>
+</section>
+
+<section id="results" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head split">
+      <div style="display:grid;gap:22px"><span class="label">Social media &amp; ad results</span><h2 class="h2">Numbers <span class="dim">that moved.</span></h2></div>
+      <p class="lead">Combined results across the brand accounts we manage, taken from Meta Business Suite insights. Growth compares with the previous period.</p>
+    </div>
+    <div class="metrics">
+      <div class="spot metric"><span class="big">73.1M</span><span class="lbl">Views</span><svg class="spark" viewBox="0 0 200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L30 36 L60 33 L90 30 L120 22 L150 18 L180 10 L200 6 L200 46 L0 46Z" fill="rgba(77,124,255,.15)"/><path d="M0 40 L30 36 L60 33 L90 30 L120 22 L150 18 L180 10 L200 6" fill="none" stroke="#a9c1ff" stroke-width="1.6"/><circle cx="200" cy="6" r="3" fill="#fff"/></svg><div class="row2"><span class="up">↑ 11.2%</span><span class="per">Aug–Oct · 90 days</span></div></div>
+      <div class="spot metric"><span class="big">13.9M</span><span class="lbl">Viewers reached</span><svg class="spark" viewBox="0 0 200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 42 L30 38 L60 36 L90 28 L120 26 L150 16 L180 12 L200 5 L200 46 L0 46Z" fill="rgba(155,123,255,.15)"/><path d="M0 42 L30 38 L60 36 L90 28 L120 26 L150 16 L180 12 L200 5" fill="none" stroke="#9b7bff" stroke-width="1.6"/><circle cx="200" cy="5" r="3" fill="#fff"/></svg><div class="row2"><span class="up">↑ 16.6%</span><span class="per">Aug–Oct · 90 days</span></div></div>
+      <div class="spot metric"><span class="big">170.4K</span><span class="lbl">Facebook link clicks</span><svg class="spark" viewBox="0 0 200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 44 L30 42 L60 38 L90 34 L120 24 L150 20 L180 9 L200 3 L200 46 L0 46Z" fill="rgba(95,227,161,.12)"/><path d="M0 44 L30 42 L60 38 L90 34 L120 24 L150 20 L180 9 L200 3" fill="none" stroke="#5fe3a1" stroke-width="1.6"/><circle cx="200" cy="3" r="3" fill="#fff"/></svg><div class="row2"><span class="up">↑ 72.6%</span><span class="per">Aug–Oct · 90 days</span></div></div>
+      <div class="spot metric"><span class="big">1.7M</span><span class="lbl">Viewers in October</span><svg class="spark" viewBox="0 0 200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L40 36 L80 30 L120 26 L160 14 L200 6 L200 46 L0 46Z" fill="rgba(77,124,255,.15)"/><path d="M0 40 L40 36 L80 30 L120 26 L160 14 L200 6" fill="none" stroke="#a9c1ff" stroke-width="1.6"/><circle cx="200" cy="6" r="3" fill="#fff"/></svg><div class="row2"><span class="up">↑ 49.2%</span><span class="per">1–31 Oct</span></div></div>
+    </div>
+    <p class="src">Source: Meta Business Suite insights, Aug–Oct 2026, combined across managed brand accounts. Sparklines show direction only.</p>
+
+    <div class="subhead"><h3>Brand growth</h3><span class="label">The brands behind the numbers</span></div>
+    <div class="growth">
+      <div class="spot gcard"><span class="brandn">Mister Hair</span><span class="gnum">16+</span><span class="gl">clinics across Karnataka, Andhra Pradesh and Telangana</span><ul><li>4,800+ patients served</li><li>Goal: 100 clinics in five years</li><li>Meta campaigns in four cities</li></ul></div>
+      <div class="spot gcard"><span class="brandn">Miss Skin</span><span class="gnum">5</span><span class="gl">clinics launched at once in Bengaluru</span><ul><li>Launch event at JW Marriott, 14 July 2026</li><li>Face of the Year contest, Season 1</li><li>Positioning: Assessment first. Always.</li></ul></div>
+      <div class="spot gcard"><span class="brandn">HEN Salon</span><span class="gnum">4.6★</span><span class="gl">from 292+ Magicpin reviews, turned into social bookings</span><ul><li>Milestone and proof carousels</li><li>Geo-targeted reels for HRBR Layout and Kalyan Nagar</li></ul></div>
+      <div class="spot gcard"><span class="brandn">Folik &amp; Lumea</span><span class="gnum">2</span><span class="gl">markets served: Chennai and Thailand</span><ul><li>English and Thai-language content</li><li>Local myth-vs-fact education</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="founder">
+  <div class="wrap founder">
+    <figure class="portrait">
+      <img src="assets/img/arijit-banerjee.webp" alt="Arijit Banerjee in silhouette against a blue galaxy, with the line: Social media without strategy is just noise" width="639" height="800" loading="lazy">
+      <figcaption>Founder · BizzTalks</figcaption>
+      <svg class="ringtext" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="cp" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+        <text><textPath href="#cp">CREATIVITY · TECHNOLOGY · BUSINESS · </textPath></text></svg>
+    </figure>
+    <div class="fcopy">
+      <span class="label">Founder — BizzTalks</span>
+      <div class="fname">Arijit<span>Banerjee</span></div>
+      <p class="fq">Building at the intersection of creativity, technology &amp; business.</p>
+      <p>Arijit Banerjee is the founder of BizzTalks, focused on connecting creative execution, digital marketing and technology to help businesses build and strengthen their digital presence.</p>
+      <p class="mute">With an interest in social media strategy, digital advertising, content creation, website development and business growth, he is building BizzTalks as a connected platform for businesses looking for support from their initial setup to their digital expansion.</p>
+      <div class="grp"><h5>Experience</h5><ul class="chips"><li>Social Media Executive, Mister Hair Clinic (Bengaluru)</li><li>Digital Marketing Executive, ACEOPTIO NEET</li><li>Freelance Video Editor</li></ul></div>
+      <div class="grp"><h5>Skills &amp; tools</h5><ul class="chips"><li>Social media strategy</li><li>Meta &amp; Google Ads</li><li>Creative direction</li><li>Copywriting</li><li>Video editing</li><li>Lead generation</li><li>Meta Business Suite</li><li>LeadSquared</li><li>AiSensy</li><li>ManyChat</li></ul></div>
+      <div class="grp"><h5>Certificates</h5><div class="certs" id="certs"></div></div>
+      <p class="mute" style="font-size:.9rem">Portfolio: <a class="tlink" href="https://arijit-banerjee-portfolio.vercel.app/" target="_blank" rel="noopener">arijit-banerjee-portfolio.vercel.app</a></p>
+      <div class="ctas">
+        <a class="btn solid" href="https://www.linkedin.com/in/arijit-banerjee-01012005jan" target="_blank" rel="noopener" data-mag>Connect with the founder</a>
+        <a class="btn" href="https://www.linkedin.com/company/bizztalkss/" target="_blank" rel="noopener" data-mag>Follow BizzTalks on LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head"><span class="label">Our working process</span><h2 class="h2">From first conversation <span class="dim">to final execution.</span></h2></div>
+    <div class="proc" id="proc"><div class="bar"></div>
+      <div class="ps"><span class="n">01</span><h3>Discover</h3><p>Understand your requirements.</p></div>
+      <div class="ps"><span class="n">02</span><h3>Plan</h3><p>Develop a suitable strategy and project roadmap.</p></div>
+      <div class="ps"><span class="n">03</span><h3>Design</h3><p>Create the visual and technical direction.</p></div>
+      <div class="ps"><span class="n">04</span><h3>Execute</h3><p>Develop and implement the agreed solution.</p></div>
+      <div class="ps"><span class="n">05</span><h3>Optimise</h3><p>Review performance and improve where applicable.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <span class="label">Contact · Start your project</span>
+    <div class="cta-big" style="margin-top:22px">Let's build<br><span>something real.</span></div>
+    <div class="contact">
+      <form class="spot" id="form" novalidate>
+        <div class="row">
+          <div class="f"><label for="f-name">Full name</label><input id="f-name" autocomplete="name" placeholder="Your name" required><span class="err" hidden>Enter your name.</span></div>
+          <div class="f"><label for="f-biz">Business / brand <em>optional</em></label><input id="f-biz" autocomplete="organization" placeholder="Brand name"></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="f-email">Email address</label><input id="f-email" type="email" autocomplete="email" placeholder="you@company.com" required><span class="err" hidden>Enter a valid email, like name@example.com.</span></div>
+          <div class="f"><label for="f-phone">Phone <em>optional</em></label><input id="f-phone" type="tel" autocomplete="tel" placeholder="+91"></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="f-service">Service required</label><select id="f-service" required><option value="">Select a service</option></select><span class="err" hidden>Choose a service.</span></div>
+          <div class="f"><label for="f-budget">Project budget <em>optional</em></label><input id="f-budget" placeholder="For example ₹50,000"></div>
+        </div>
+        <div class="f"><label for="f-details">Project details</label><textarea id="f-details" required placeholder="What do you need, and by when?"></textarea><span class="err" hidden>Add a line or two about the project.</span></div>
+        <div class="send">
+          <a class="btn wa" id="sendWa" href="https://wa.me/919748989711" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn solid" id="sendMail" href="mailto:managerialtalk@gmail.com">Email</a>
+          <a class="btn" id="sendCall" href="tel:+919748989711">Call</a>
+        </div>
+        <p class="status" id="status" role="status">WhatsApp and Email open with everything above already written out.</p>
+      </form>
+      <div class="side">
+        <div class="spot card"><span class="k">WhatsApp · Phone</span><span class="v">+91 97489 89711</span><div class="acts"><button class="tlink" type="button" data-copy="+91 97489 89711">Copy number</button><a class="tlink" href="https://wa.me/919748989711" target="_blank" rel="noopener">Open WhatsApp</a></div></div>
+        <div class="spot card"><span class="k">Email</span><span class="v">managerialtalk@gmail.com</span><div class="acts"><button class="tlink" type="button" data-copy="managerialtalk@gmail.com">Copy email</button></div></div>
+        <div class="spot card"><span class="k">Follow</span><div class="acts">
+          <a class="tlink" href="https://www.instagram.com/biz.talksofficial?bqrl=MW5zMHBrMTVsbXU3Mw==" target="_blank" rel="noopener">Instagram</a>
+          <a class="tlink" href="https://www.linkedin.com/company/bizztalkss/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="tlink" href="https://www.linkedin.com/in/arijit-banerjee-01012005jan" target="_blank" rel="noopener">Founder</a></div></div>
+        <p class="legal">Registration and compliance services are subject to eligibility, applicable regulations and the involvement of authorised professionals where required. Government approvals and timelines are determined by the relevant authorities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap"><img class="flogo" src="assets/logo/bizztalks-logo.webp" alt="BizzTalks logo" width="90" height="120"><div style="display:grid;gap:10px"><span class="brand" style="pointer-events:none">BIZZTALKS</span><span class="mute" style="font-size:.9rem;max-width:34ch">Your complete business growth &amp; digital transformation partner.</span></div></div>
+      <nav aria-label="Footer"><a class="tlink" href="#solutions">Solutions</a><a class="tlink" href="#work">Work</a><a class="tlink" href="#founder">Founder</a><a class="tlink" href="#contact">Contact</a>
+        <a class="tlink" href="https://www.instagram.com/biz.talksofficial?bqrl=MW5zMHBrMTVsbXU3Mw==" target="_blank" rel="noopener">Instagram</a><a class="tlink" href="https://www.linkedin.com/company/bizztalkss/" target="_blank" rel="noopener">LinkedIn</a></nav>
+    </div>
+    <div class="wordmark" aria-hidden="true">BizzTalks</div>
+    <p class="fine">BizzTalks provides registration assistance, documentation coordination and facilitation. It is not a law firm or a CA firm. Legal, tax and statutory advice is delivered by appropriately qualified professionals.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+"use strict";
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,fine=matchMedia("(hover:hover) and (pointer:fine)").matches;
+function el(t,a,h){var e=document.createElement(t);for(var k in a||{})e.setAttribute(k,a[k]);if(h!=null)e.innerHTML=h;return e}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var ICON={doc:'<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',layers:'<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',link:'<path d="M10 14a4 4 0 006 0l3-3a4 4 0 00-6-6l-1 1"/><path d="M14 10a4 4 0 00-6 0l-3 3a4 4 0 006 6l1-1"/>',target:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/>',code:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M9 10l-2 2 2 2M15 10l2 2-2 2"/>',gem:'<path d="M6 4h12l3 5-9 11L3 9z"/><path d="M3 9h18"/>',chat:'<path d="M4 5h16v11H9l-5 4z"/>',chart:'<path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/>'};
+function ic(n){return'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ICON[n]+'</svg>'}
+
+/* nav */
+var nav=$("#nav"),bg=$("#burger"),dr=$("#drawer");
+function ns(){nav.classList.toggle("solid",scrollY>30||!dr.hidden)}
+function setMenu(open){dr.hidden=!open;bg.setAttribute("aria-expanded",String(open));bg.setAttribute("aria-label",open?"Close menu":"Open menu");ns()}
+setMenu(false);
+bg.onclick=function(e){e.stopPropagation();setMenu(dr.hidden)};
+$$("a",dr).forEach(function(a){a.addEventListener("click",function(){setMenu(false)})});
+document.addEventListener("click",function(e){if(!dr.hidden&&!nav.contains(e.target))setMenu(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!dr.hidden){setMenu(false);bg.focus()}});
+addEventListener("resize",function(){if(innerWidth>1020&&!dr.hidden)setMenu(false)});
+addEventListener("scroll",ns,{passive:true});ns();
+
+/* marquee */
+var MQ=["Business registration","Brand identity","Websites","Social media","Google Ads","Meta Ads","Video editing","Automation","SEO","Analytics"];
+$("#track").innerHTML=MQ.concat(MQ).map(function(w){return"<span>"+w+"</span>"}).join("");
+
+/* ticker */
+var TW=["GST registration","LLP incorporation","Brand identity","a new website","Instagram management","Google Ads","Meta lead campaigns","WhatsApp automation","Local SEO","Reels editing"],ti=0;
+if(!reduce)setInterval(function(){ti=(ti+1)%TW.length;$("#tick").textContent=TW[ti]},2300);
+
+/* stages */
+[["Establish","Paperwork","Business registration and legal-administrative formalities, coordinated with qualified professionals.",["Registration guidance","GST · Udyam · IEC","Trademark filing"]],
+ ["Identify","Identity","Brand identity, positioning and the digital assets that make the business recognisable.",["Brand strategy","Logo & guidelines","Business profile"]],
+ ["Build","Infrastructure","Website development, technology and digital infrastructure that customers can actually use.",["Websites & e-commerce","UI/UX design","Website SEO"]],
+ ["Grow","Customers","Marketing, advertising, automation and lead generation that turn attention into enquiries.",["Social & content","Google & Meta Ads","Automation & reporting"]]
+].forEach(function(s,i){$("#stages").appendChild(el("div",{class:"spot stg"},'<span class="num">0'+(i+1)+'</span><span class="kick">Stage 0'+(i+1)+' · '+s[1]+'</span><h3>'+s[0]+'</h3><p>'+s[2]+'</p><ul>'+s[3].map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul>'))});
+
+/* services */
+function R(t,d,f,o){return{t:t,d:d,f:f,o:o}}
+var DIV=[
+ {n:"Business Registration & Startup Formalities",o:"Business Registration Assistance",h:"From idea to a registered business.",d:"Starting a business involves important administrative, documentation and registration requirements. We help entrepreneurs navigate the process through structured assistance and coordination with relevant professionals.",
+  cards:[R("Business structure guidance","An overview of the registration routes and what each involves.","First-time founders deciding how to register."),
+   R("Proprietorship setup assistance","Help assembling the registrations a sole proprietor typically needs.","Individuals starting alone."),
+   R("Partnership firm registration assistance","Documentation coordination for registering a partnership firm.","Two or more partners starting together."),
+   R("LLP registration coordination","Coordination with qualified professionals for LLP filing.","Partners who want limited liability.","Company Incorporation"),
+   R("Private Limited Company incorporation coordination","Document collection and coordination with CA/CS professionals.","Founders planning to raise funds or scale.","Company Incorporation"),
+   R("Company name availability & reservation","Help checking and applying for your preferred name.","Anyone incorporating a company or LLP.","Company Incorporation"),
+   R("PAN and TAN application coordination","Application support for the business PAN and TAN.","Newly formed firms and companies."),
+   R("GST registration assistance","Document checklist and application support for GST.","Businesses that need or choose GST registration.","GST Registration Assistance"),
+   R("Udyam / MSME registration assistance","Support with the Udyam registration application.","Micro, small and medium enterprises.","MSME / Udyam Registration"),
+   R("Shop and Establishment registration","Help with the state-level Shop and Establishment application.","Shops, offices and commercial premises."),
+   R("FSSAI registration & licensing coordination","Coordination for FSSAI registration or licence, where applicable.","Food businesses of any size."),
+   R("Import Export Code (IEC) assistance","Application support for the IEC.","Businesses planning to import or export."),
+   R("Trademark application coordination","Coordination with authorised professionals for trademark filing.","Brands protecting a name or logo.","Trademark Assistance"),
+   R("Business documentation & application support","Preparation and organisation of the paperwork each application needs.","Any business mid-registration.","Business Documentation"),
+   R("Digital signature (DSC) assistance","Help obtaining the certificates that filings require.","Directors, partners and signatories."),
+   R("Business address & documentation guidance","Guidance on address-proof requirements, where available.","Home-based and new businesses."),
+   R("Basic compliance-calendar coordination","A simple calendar of renewal and filing dates.","Businesses that have just registered."),
+   R("Business profile & official online presence","Official listings and profiles set up once you are registered.","Businesses ready to be found online.")],
+  sub:["Document checklist preparation","Application documentation coordination","Renewal and filing reminders","Registration-status follow-up","Coordination with qualified CA, CS and legal professionals","Administrative support"]},
+ {n:"Digital Marketing",o:"Digital Marketing",h:"A plan before a post.",d:"Who you are trying to reach, where they spend time and what should happen after they find you.",i:["Complete digital marketing strategy","Digital brand positioning","Online business promotion","Lead generation","Audience research","Campaign planning","Conversion optimisation","Marketing analytics","Growth strategy"]},
+ {n:"Social Media Management",o:"Social Media Management",h:"Your pages, run properly.",d:"Planned content, published on schedule, with replies handled and results reported.",i:["Instagram management","Facebook management","YouTube management","LinkedIn management","Social media strategy","Content calendar development","Content publishing","Community management","Audience engagement","Social media analytics","Brand communication"]},
+ {n:"Google & Meta Advertising",o:"Google Ads",h:"Paid campaigns with tracking in place.",d:"Campaigns set up, tracked and adjusted across Google and Meta.",groups:[["Google Ads","Google Ads",["Search advertising","Display advertising","YouTube advertising","Keyword research","Campaign setup","Lead generation","Conversion tracking","Campaign optimisation","Performance reporting"]],["Meta Ads","Meta Ads",["Facebook advertising","Instagram advertising","Lead generation campaigns","Website traffic campaigns","Engagement campaigns","Retargeting","Audience targeting","Creative testing","Campaign optimisation"]]]},
+ {n:"Website Development & Technology",o:"Website Development",h:"Websites built to be used.",d:"Responsive, fast and easy to enquire from, on a stack you can maintain.",i:["Business website development","Corporate websites","E-commerce websites","Landing pages","Portfolio websites","Website redesign","Responsive development","UI/UX design","Website maintenance","Performance optimisation","Website SEO","Web-based business solutions"]},
+ {n:"Portfolio Development & Personal Branding",o:"Portfolio Development",h:"Your work, presented well.",d:"Personal sites and portfolios for professionals, creators and students.",i:["Personal portfolio websites","Professional portfolios","Interactive 3D portfolios","Resume integration","Personal branding","Professional digital identity","Creative portfolio presentation"]},
+ {n:"Video Editing & Creative Production",o:"Video Editing",h:"Edits made for the feed.",d:"Short-form and long-form editing, with motion graphics where they help.",i:["Instagram Reels","YouTube Shorts","YouTube videos","Promotional videos","Business videos","Short-form video editing","Motion graphics","Promotional creatives","Video content strategy"]},
+ {n:"Content Creation & Design",o:"Content Creation",h:"Graphics and copy on brand.",d:"Everyday creatives for social, print and ads.",i:["Social media graphics","Instagram carousels","Promotional designs","Brand creatives","Marketing posters","Brochures","Digital advertisements","Visual brand identity","Content calendars"]},
+ {n:"Branding & Business Identity",o:"Branding",h:"An identity people recognise.",d:"Strategy, logo and guidelines that hold together across every touchpoint.",i:["Brand strategy","Brand identity","Logo design","Brand positioning","Brand guidelines","Visual communication","Digital brand development"]},
+ {n:"Marketing Automation",o:"Marketing Automation",h:"Follow-ups that run themselves.",d:"Enquiries captured, answered and followed up without copying numbers between apps.",i:["WhatsApp automation","Instagram DM automation","Lead capture workflows","Automated enquiry systems","Customer follow-up automation","CRM integration","Marketing workflow automation"]},
+ {n:"SEO & Online Presence",o:"SEO",h:"Be found when people search.",d:"Search and local visibility for your website and Google Business Profile.",i:["Search engine optimisation","Local SEO","Google Business Profile setup and optimisation","Website SEO","Search visibility","Local business visibility","Online reputation support"]},
+ {n:"Analytics & Performance",o:"Digital Marketing",h:"Know what is working.",d:"Reporting that connects spend and effort to enquiries.",i:["Social media analytics","Advertising analytics","Campaign reporting","Audience insights","Lead tracking","Performance dashboards","Data analysis","Campaign optimisation"]}
+];
+var L="ABCDEFGHIJKL",ix=$("#index");
+function chips(a){return'<ul class="chips">'+a.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+"</ul>"}
+DIV.forEach(function(d,i){
+  var body='<div class="div-intro"><div><h4>'+esc(d.h)+'</h4><p class="mute">'+esc(d.d)+'</p></div><a class="btn solid sm" href="#contact" data-enquire="'+esc(d.o)+'">Enquire now</a></div>';
+  if(d.cards){
+    body+='<div class="rcards">'+d.cards.map(function(c,k){var id="fit"+k;return'<div class="spot rc"><h6>'+esc(c.t)+'</h6><p>'+esc(c.d)+'</p><div class="fit" id="'+id+'" hidden><b>Suitable for</b>'+esc(c.f)+'</div><div class="acts"><button class="tlink" type="button" data-more aria-expanded="false" aria-controls="'+id+'">Learn more</button><a class="tlink" href="#contact" data-enquire="'+esc(c.o||d.o)+'" data-note="'+esc(c.t)+'">Enquire</a></div></div>'}).join("")+'</div>';
+    body+='<div class="grp"><h5>Business documentation &amp; compliance support</h5>'+chips(d.sub)+'</div><p class="legal">Registration and compliance services are subject to eligibility, applicable regulations and the involvement of authorised professionals where required. Government approvals and timelines are determined by the relevant authorities. BizzTalks provides assistance and coordination; it does not give legal opinions or guarantee approvals.</p>';
+  }else if(d.groups){body+=d.groups.map(function(g){return'<div class="grp"><h5>'+g[0]+'</h5>'+chips(g[2])+'<div><a class="tlink" href="#contact" data-enquire="'+g[1]+'">Enquire about '+g[0]+'</a></div></div>'}).join("")}
+  else body+=chips(d.i);
+  var w=el("div",{class:"div"+(i===0?" open":"")});
+  w.innerHTML='<button class="div-h" type="button" aria-expanded="'+(i===0)+'" aria-controls="dv'+i+'"><span class="code">'+L[i]+' / 12</span><span class="t">'+esc(d.n)+'</span><span class="pm" aria-hidden="true"></span></button><div class="div-b" id="dv'+i+'"><div><div class="div-in">'+body+'</div></div></div>';
+  ix.appendChild(w);
+});
+ix.addEventListener("click",function(e){
+  var h=e.target.closest(".div-h");
+  if(h){var d=h.parentNode,o=!d.classList.contains("open");d.classList.toggle("open",o);h.setAttribute("aria-expanded",String(o));return}
+  var m=e.target.closest("[data-more]");if(m){var f=$("#"+m.getAttribute("aria-controls"),m.closest(".rc"));f.hidden=!f.hidden;m.setAttribute("aria-expanded",String(!f.hidden));m.textContent=f.hidden?"Learn more":"Show less"}
+});
+
+/* launch steps */
+var STEPS=[["Business idea","Understand the business concept and requirements."],["Registration support","Explore suitable registration pathways and coordinate required documentation."],["Business identity","Develop the brand name, identity and positioning."],["Digital foundation","Build the website, email presence and essential digital assets."],["Market entry","Create content, social media presence and marketing campaigns."],["Business growth","Generate enquiries, improve visibility and optimise marketing."]];
+var od=$("#orbDots");
+STEPS.forEach(function(s,i){
+  $("#steps").appendChild(el("div",{class:"spot step","data-i":i},'<span class="sn">STEP 0'+(i+1)+'</span><div><h3>'+s[0]+'</h3><p>'+s[1]+'</p></div>'));
+  var a=-Math.PI/2+i*(Math.PI*2/6),x=100+86*Math.cos(a),y=100+86*Math.sin(a);
+  od.insertAdjacentHTML("beforeend",'<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="5" fill="#070a16" stroke="#a9c1ff" stroke-width="1.2" class="od"/><text x="'+(100+66*Math.cos(a)).toFixed(1)+'" y="'+(100+66*Math.sin(a)+3).toFixed(1)+'" text-anchor="middle" font-size="7" font-family="Michroma,sans-serif" fill="#7e869c">0'+(i+1)+'</text>');
+});
+var arc=$("#orbArc"),dots=$$(".od");
+function launchProg(){var st=$("#steps").getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.6-st.top)/st.height));
+  arc.style.strokeDashoffset=reduce?0:(540*(1-p)).toFixed(1);var n=reduce?6:Math.ceil(p*6);dots.forEach(function(d,i){d.setAttribute("fill",i<n?"#4d7cff":"#070a16")})}
+
+/* bento */
+[["b1","doc","Business launch and administrative support","Registration assistance and documentation coordination sit alongside the creative and marketing work, so you are not managing separate vendors for paperwork and growth."],
+ ["b2","layers","Creative and technical execution","Design, video and development handled together."],
+ ["b3","link","Integrated marketing services","Social, ads, SEO and automation planned as one system."],
+ ["b4","target","Strategy-driven planning","A clear objective before any campaign or build starts."],
+ ["b5","code","Modern development practices","Responsive, fast and maintainable builds."],
+ ["b6","gem","Custom solutions","A salon, a clinic and a manufacturer need different things. Each gets a plan shaped around its business."],
+ ["b7","chat","Transparent communication","You know what is being done, when, and why."],
+ ["b8","chart","Scalable digital solutions","Start with what you need now and add services as you grow."]
+].forEach(function(b){var x=el("div",{class:"spot b "+b[0]},ic(b[1])+"<div><h3>"+b[2]+"</h3></div><p>"+b[3]+"</p>");if(b[0]==="b8")x.insertAdjacentHTML("beforeend",'<a class="btn sm" href="#contact">Talk to us</a>');$("#bento").appendChild(x)});
+
+/* work */
+function art(k){
+  var g='<defs><linearGradient id="a'+k+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d7cff"/><stop offset="1" stop-color="#9b7bff"/></linearGradient></defs>',F='fill="url(#a'+k+')"',S='stroke="rgba(180,195,255,.35)" fill="none"',b="";
+  if(k==="web")b='<rect x="40" y="36" width="240" height="168" rx="12" '+S+'/><path d="M40 60h240" '+S+'/><circle cx="54" cy="48" r="3" fill="rgba(180,195,255,.4)"/><rect x="60" y="82" width="120" height="16" rx="4" '+F+'/><rect x="60" y="108" width="150" height="6" rx="3" fill="rgba(201,207,221,.4)"/><rect x="60" y="122" width="110" height="6" rx="3" fill="rgba(201,207,221,.22)"/><rect x="60" y="150" width="70" height="22" rx="11" '+F+'/><rect x="206" y="80" width="56" height="104" rx="10" fill="rgba(77,124,255,.2)"/>';
+  if(k==="social")b=[0,1,2].map(function(i){return'<rect x="'+(52+i*76)+'" y="'+(40+(i%2)*20)+'" width="64" height="140" rx="12" '+S+'/><rect x="'+(60+i*76)+'" y="'+(52+(i%2)*20)+'" width="48" height="66" rx="6" '+(i===1?F:'fill="rgba(155,123,255,.22)"')+'/><rect x="'+(60+i*76)+'" y="'+(128+(i%2)*20)+'" width="36" height="5" rx="2" fill="rgba(201,207,221,.4)"/>'}).join("");
+  if(k==="gads")b='<rect x="40" y="52" width="240" height="38" rx="19" '+S+'/><circle cx="62" cy="71" r="8" '+S+'/><rect x="80" y="67" width="120" height="8" rx="4" fill="rgba(201,207,221,.4)"/><rect x="40" y="110" width="38" height="16" rx="4" '+F+'/><rect x="86" y="113" width="160" height="10" rx="3" fill="rgba(169,193,255,.6)"/><rect x="40" y="138" width="220" height="6" rx="3" fill="rgba(201,207,221,.3)"/><rect x="40" y="152" width="180" height="6" rx="3" fill="rgba(201,207,221,.2)"/><path d="M200 196l20-20 16 10 30-34" stroke="#a9c1ff" fill="none" stroke-width="2"/>';
+  if(k==="mads")b='<rect x="110" y="28" width="100" height="184" rx="18" '+S+'/><rect x="120" y="46" width="80" height="100" rx="8" '+F+'/><rect x="120" y="156" width="56" height="6" rx="3" fill="rgba(201,207,221,.4)"/><rect x="120" y="174" width="80" height="18" rx="9" fill="rgba(77,124,255,.35)"/><path d="M48 170l16-34 16 20 14-46" '+S+'/><path d="M234 70h40M234 88h28M234 106h34" '+S+'/>';
+  if(k==="video")b='<rect x="44" y="36" width="232" height="120" rx="12" '+S+'/><path d="M148 76l38 20-38 20z" '+F+'/><rect x="44" y="172" width="232" height="8" rx="4" fill="rgba(201,207,221,.16)"/><rect x="44" y="172" width="100" height="8" rx="4" '+F+'/><rect x="44" y="190" width="42" height="12" rx="3" fill="rgba(155,123,255,.45)"/><rect x="92" y="190" width="74" height="12" rx="3" fill="rgba(77,124,255,.45)"/><rect x="172" y="190" width="30" height="12" rx="3" fill="rgba(155,123,255,.45)"/>';
+  if(k==="brand")b='<circle cx="112" cy="120" r="52" '+S+'/><path d="M88 120l24-38 24 38-24 38z" '+F+'/>'+["#4d7cff","#9b7bff","#c9cfdd","#141826"].map(function(c,i){return'<rect x="'+(190+(i%2)*50)+'" y="'+(72+Math.floor(i/2)*50)+'" width="42" height="42" rx="9" fill="'+c+'" stroke="rgba(180,195,255,.3)"/>'}).join("");
+  if(k==="design")b='<rect x="48" y="30" width="104" height="180" rx="10" '+F+'/><rect x="62" y="48" width="66" height="12" rx="3" fill="rgba(255,255,255,.9)"/><rect x="62" y="68" width="46" height="6" rx="3" fill="rgba(255,255,255,.55)"/><circle cx="100" cy="148" r="30" fill="rgba(4,5,10,.35)"/><rect x="168" y="30" width="104" height="84" rx="10" '+S+'/><rect x="168" y="126" width="104" height="84" rx="10" fill="rgba(155,123,255,.22)"/>';
+  if(k==="port")b='<circle cx="96" cy="96" r="34" '+F+'/><rect x="54" y="146" width="84" height="9" rx="4" fill="rgba(201,207,221,.5)"/><rect x="64" y="164" width="64" height="6" rx="3" fill="rgba(201,207,221,.25)"/>'+[0,1,2,3].map(function(i){return'<rect x="'+(168+(i%2)*58)+'" y="'+(52+Math.floor(i/2)*70)+'" width="50" height="60" rx="9" '+(i===1?'fill="rgba(77,124,255,.32)"':S)+'/>'}).join("");
+  if(k==="story")b='<rect x="70" y="20" width="96" height="200" rx="16" '+S+'/><rect x="80" y="34" width="76" height="4" rx="2" fill="rgba(201,207,221,.5)"/><rect x="80" y="54" width="76" height="110" rx="8" '+F+'/><rect x="80" y="176" width="60" height="8" rx="4" fill="rgba(255,255,255,.8)"/><rect x="80" y="192" width="44" height="6" rx="3" fill="rgba(201,207,221,.4)"/><rect x="188" y="56" width="92" height="120" rx="10" fill="rgba(155,123,255,.18)" stroke="rgba(180,195,255,.3)"/><rect x="200" y="72" width="66" height="12" rx="3" fill="rgba(255,255,255,.85)"/><rect x="200" y="92" width="48" height="6" rx="3" fill="rgba(201,207,221,.4)"/><rect x="200" y="148" width="50" height="16" rx="8" '+F+'/>';
+  if(k==="carousel")b=[0,1,2,3].map(function(i){return'<rect x="'+(36+i*64)+'" y="'+(56+i*4)+'" width="88" height="110" rx="10" '+(i===0?F:'fill="rgba(10,14,32,.95)" stroke="rgba(180,195,255,.3)"')+'/>'}).join("")+'<rect x="48" y="76" width="56" height="8" rx="3" fill="rgba(255,255,255,.9)"/><rect x="48" y="90" width="40" height="6" rx="3" fill="rgba(255,255,255,.5)"/>'+[0,1,2,3].map(function(i){return'<circle cx="'+(140+i*12)+'" cy="196" r="3" fill="'+(i?'rgba(201,207,221,.3)':'#a9c1ff')+'"/>'}).join("");
+  if(k==="pink")b='<defs><linearGradient id="pk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3c6d3"/><stop offset="1" stop-color="#d9a86c"/></linearGradient></defs><rect x="60" y="30" width="200" height="180" rx="14" fill="url(#pk)" opacity=".9"/><text x="160" y="118" text-anchor="middle" font-family="Sora,sans-serif" font-weight="700" font-size="44" fill="#3a2230">4.6★</text><rect x="110" y="138" width="100" height="7" rx="3" fill="rgba(58,34,48,.5)"/><rect x="126" y="152" width="68" height="6" rx="3" fill="rgba(58,34,48,.3)"/>';
+  if(k==="contest")b='<path d="M160 40l12 26 28 3-21 19 6 28-25-14-25 14 6-28-21-19 28-3z" '+F+'/>'+[0,1,2,3,4].map(function(i){return'<rect x="'+(44+i*48)+'" y="140" width="40" height="64" rx="8" fill="rgba(10,14,32,.95)" stroke="rgba(180,195,255,.3)"/><circle cx="'+(64+i*48)+'" cy="162" r="10" fill="rgba(155,123,255,.4)"/>'}).join("");
+  if(k==="green")b='<rect x="44" y="36" width="112" height="168" rx="12" fill="#e9e4d4"/><rect x="58" y="54" width="70" height="10" rx="3" fill="#2f5d44"/><rect x="58" y="74" width="84" height="40" rx="6" fill="#2f5d44" opacity=".85"/><rect x="58" y="124" width="84" height="40" rx="6" fill="#7aa585" opacity=".7"/><rect x="164" y="36" width="112" height="168" rx="12" fill="#2f5d44"/><text x="220" y="112" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#e9e4d4">ภาษาไทย</text><rect x="186" y="130" width="68" height="6" rx="3" fill="#e9e4d4" opacity=".6"/>';
+  return'<svg class="art" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">'+g+b+'</svg>';
+}
+/* Real work from Arijit Banerjee's portfolio. Categories with no published project show the service instead. */
+var WORK=[
+ {c:"Website Development",k:"web",t:"Arijit Banerjee portfolio",client:"Personal portfolio",s:"Responsive one-page portfolio",d:"A one-page portfolio presenting work, case studies, skills, experience and a contact section with WhatsApp, Instagram, LinkedIn and email hand-offs.",dl:["About, services, work and case-study sections","Skills, tools and certificates","Direct contact buttons"],url:"https://arijit-banerjee-portfolio.vercel.app/",o:"Website Development"},
+ {c:"Website Development",k:"web",t:"BizzTalks website",client:"BizzTalks",s:"This website",d:"The site you are on: a WebGL particle hero, a 12-division service index, a six-step launch journey and a contact form that hands off to WhatsApp and email with the visitor's details filled in.",dl:["Interactive 3D hero","Service discovery with enquiry pre-fill","WhatsApp and email form hand-off"],url:"https://www.bizztalks.in",o:"Website Development"},
+ {c:"Portfolio Development",k:"port",t:"Personal brand portfolio",client:"Arijit Banerjee",s:"Work, case studies, skills",d:"A personal portfolio that turns social media work into a clear professional story: showcased posts, three case studies, experience timeline and certificates.",dl:["Work gallery made for the feed","Case-study write-ups","Experience and certificates"],url:"https://arijit-banerjee-portfolio.vercel.app/",o:"Portfolio Development"},
+ {c:"Social Media Management",k:"social",t:"Premium in the dark",client:"Mister Hair",s:"Dark-gold feed series",d:"A dark-and-gold feed look carrying three content pillars: local reach, service education and hair-care tips.",dl:["Clinic map post (16+ clinics)","Sapphire FUE explainer","Hair care: chlorine and salt water"],o:"Social Media Management"},
+ {c:"Social Media Management",k:"story",t:"Patient proof & hiring",client:"Mister Hair",s:"Story cover · recruitment post",d:"A 9:16 patient story, From Fear to Clarity, telling a Sapphire hair transplant journey in Mysuru step by step, plus a social media intern hiring post for the corporate office.",dl:["Patient journey story / reel cover","Recruitment creative"],o:"Social Media Management"},
+ {c:"Social Media Management",k:"carousel",t:"Glutathione IV therapy",client:"Miss Skin",s:"Education-first carousel, 4 slides",d:"A carousel that opens with the question people ask, explains glutathione, lists three safety questions to ask any clinic and closes with a doctor-led consultation call to action.",dl:["4-slide Instagram carousel","Safety-first education angle","Consultation CTA"],o:"Social Media Management"},
+ {c:"Social Media Management",k:"pink",t:"Soft pink, hard proof",client:"HEN Salon",s:"Milestone carousel",d:"A blush-and-gold milestone carousel that uses the studio's scale and standards as proof.",dl:["5-slide carousel","Milestone numbers over salon photography"],o:"Social Media Management"},
+ {c:"Social Media Management",k:"contest",t:"Face of the Year, Season 1",client:"Miss Skin",s:"Instagram contest",d:"A contestant-based Instagram contest with an on-brand carousel for each contestant, built to drive entries, shares and word of mouth across five clinic areas.",dl:["Contestant carousels","Contest rollout across five clinic areas"],o:"Social Media Management"},
+ {c:"Creative Design",k:"green",t:"Hair and skin, locally",client:"Folik & Lumea",s:"English and Thai carousels",d:"Carousel slides in a green-and-cream identity: a Chennai climate myth-vs-fact layout, a hair-attention checklist, a booking CTA and a Thai-language post warning against DIY bleaching and peels.",dl:["Myth vs fact layout","Checklist carousel","Thai-language education post"],o:"Content Creation"},
+ {c:"Creative Design",k:"design",t:"IV therapy brochure",client:"Miss Skin",s:"Brochure design",d:"A brochure for the clinic's IV therapy treatment, designed to the brand's visual guidelines for in-clinic and digital use.",dl:["Brochure layout","In-clinic and digital versions"],o:"Content Creation"},
+ {c:"Meta Ads",k:"mads",t:"Treatment campaigns, four cities",client:"Mister Hair",s:"PRP · GFC · Exosome",d:"Meta campaigns for PRP, GFC and exosome treatments across Bangalore, Mysore, Hubli and Davangere, supported by trust-led content.",dl:["Campaigns for three treatments","City-level targeting: Bangalore, Mysore, Hubli, Davangere"],o:"Meta Ads"},
+ {c:"Branding",k:"brand",t:"Brand identity & positioning",client:"Mister Hair · Miss Skin · HEN Salon",s:"Positioning and visual systems",d:"Positioning and on-brand visual systems for three clinic and salon brands: dark-gold for Mister Hair, an assessment-first voice for Miss Skin and blush-and-gold for HEN Salon.",dl:["Brand voice and positioning","Visual styles applied across feeds"],o:"Branding"},
+ {c:"Video Editing",k:"video",t:"60+ videos edited",client:"Freelance clients",s:"Reels, shorts, promos",d:"Freelance editing work with more than 60 videos edited and delivered, including short-form reels and promotional edits.",dl:["Short-form reels and shorts","Promotional and business videos"],o:"Video Editing"},
+ {c:"Google Ads",k:"gads",svc:1,t:"Google Ads",client:"Service",s:"Search · Display · YouTube",d:"Search, Display and YouTube campaigns with keyword research, conversion tracking, optimisation and performance reporting.",dl:["Keyword research and campaign setup","Conversion tracking","Optimisation and reporting"],o:"Google Ads"}
+];
+var IMG={"ms-thinking-drips": "assets/img/ms-thinking-drips.webp", "ms-what-is-glutathione": "assets/img/ms-what-is-glutathione.webp", "fl-hair-signs": "assets/img/fl-hair-signs.webp", "fl-thai-post": "assets/img/fl-thai-post.webp", "mh-intern-hiring": "assets/img/mh-intern-hiring.webp", "mh-16-clinics": "assets/img/mh-16-clinics.webp", "mh-patient-journey": "assets/img/mh-patient-journey.webp", "mh-sapphire-fue": "assets/img/mh-sapphire-fue.webp", "cert-jis-python": "assets/img/cert-jis-python.webp", "hen-already-built": "assets/img/hen-already-built.webp", "cert-coursera-google-ads": "assets/img/cert-coursera-google-ads.webp", "fl-expert-care": "assets/img/fl-expert-care.webp", "ms-your-skin": "assets/img/ms-your-skin.webp", "mh-chlorine-salt": "assets/img/mh-chlorine-salt.webp", "fl-chennai-climate": "assets/img/fl-chennai-climate.webp", "ms-3-questions": "assets/img/ms-3-questions.webp"};
+var SL={
+ "Premium in the dark":[["mh-16-clinics","16+ clinics across South India, glowing map with clinic pins"],["mh-sapphire-fue","Sapphire FUE: precision you can't see"],["mh-chlorine-salt","Chlorine and salt dry out both. Rinse, hydrate, repeat."]],
+ "Patient proof & hiring":[["mh-patient-journey","From Fear to Clarity: a hair transplant journey in Mysuru, patient face blurred"],["mh-intern-hiring","We're hiring: Social Media Intern, Mister Hair Clinic corporate office"]],
+ "Glutathione IV therapy":[["ms-thinking-drips","Slide 1: Thinking about glutathione drips?"],["ms-what-is-glutathione","Slide 2: What is glutathione?"],["ms-3-questions","Slide 3: 3 important questions to ask before you begin"],["ms-your-skin","Slide 4: Your skin. Your choice. Book a consultation"]],
+ "Soft pink, hard proof":[["hen-already-built","HEN Salon: what we've already built, milestone numbers over the salon interior"]],
+ "Hair and skin, locally":[["fl-chennai-climate","Chennai's climate is tough on you: myth vs fact"],["fl-hair-signs","Signs your hair needs attention: a checklist"],["fl-expert-care","Expert care for hair and skin: book your consultation in Chennai"],["fl-thai-post","Thai-language post warning against DIY bleaching and peels"]]
+};
+WORK.forEach(function(w){if(SL[w.t])w.slides=SL[w.t]});
+var works=$("#works"),wd=$("#wd"),filt=$("#filters");
+function cover(w){if(!w.slides)return art(w.k);var s=w.slides[0];return'<img class="art ph" src="'+IMG[s[0]]+'" alt="'+esc(s[1])+'" loading="lazy">'+(w.slides.length>1?'<span class="cnt">'+w.slides.length+' SLIDES</span>':'')}
+var worksTxt=$("#worksTxt");
+function renderWork(cat){works.innerHTML="";worksTxt.innerHTML="";wd.hidden=true;
+  WORK.forEach(function(w){if(cat!=="All"&&w.c!==cat)return;
+    if(!w.slides){
+      worksTxt.appendChild(el("div",{class:"spot tile txt"},'<span class="meta"><span class="tag">'+esc(w.c)+'</span><b>'+esc(w.t)+'</b><span class="who">'+esc(w.svc?w.s:w.client+" · "+w.s)+'</span><p>'+esc(w.d)+'</p><ul>'+w.dl.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+'</ul><span class="acts">'+(w.url?'<a class="tlink" href="'+w.url+'" target="_blank" rel="noopener">Visit live site</a>':'')+'<a class="tlink" href="#contact" data-enquire="'+w.o+'">Enquire</a></span></span>'));
+      return}
+    var t=el("button",{class:"spot tile",type:"button","aria-controls":"wd"},cover(w)+'<span class="meta"><span class="tag">'+esc(w.svc?"Service":w.client)+'</span><b>'+esc(w.t)+'</b><span>'+esc(w.c)+' · '+esc(w.s)+'</span></span>');
+    t.onclick=function(){wd.hidden=false;wd.innerHTML='<div class="wd-h"><div><span class="tag">'+esc(w.c)+(w.svc?"":" · "+esc(w.client))+'</span><h3>'+esc(w.t)+'</h3></div><button class="tlink" type="button" id="wdx">Close</button></div><p>'+esc(w.d)+'</p>'+(w.slides?'<div class="slides">'+w.slides.map(function(s){return'<figure><img src="'+IMG[s[0]]+'" alt="'+esc(s[1])+'" loading="lazy"><figcaption>'+esc(s[1])+'</figcaption></figure>'}).join("")+'</div>':'')+'<ul>'+w.dl.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+'</ul><div class="ctas">'+(w.url?'<a class="btn sm" href="'+w.url+'" target="_blank" rel="noopener">Visit live site</a>':'')+'<a class="btn solid sm" href="#contact" data-enquire="'+w.o+'">'+(w.svc?"Enquire about this service":"Start a project like this")+'</a></div>';
+      $("#wdx").onclick=function(){wd.hidden=true;t.focus()};wd.scrollIntoView({block:"nearest",behavior:reduce?"auto":"smooth"})};
+    works.appendChild(t)})}
+var CATS=["All"];WORK.forEach(function(w){if(CATS.indexOf(w.c)<0)CATS.push(w.c)});
+CATS.forEach(function(c,i){var b=el("button",{type:"button","aria-pressed":String(!i)},c);b.onclick=function(){$$("button",filt).forEach(function(x){x.setAttribute("aria-pressed",String(x===b))});renderWork(c)};filt.appendChild(b)});
+renderWork("All");
+
+/* feed wall */
+var WALL=[["ms-thinking-drips","Thinking about glutathione drips?","Miss Skin"],["mh-16-clinics","16+ clinics across South India","Mister Hair"],["hen-already-built","What we've already built","HEN Salon"],["fl-chennai-climate","Chennai's climate: myth vs fact","Folik & Lumea"],["ms-what-is-glutathione","What is glutathione?","Miss Skin"],["mh-sapphire-fue","Sapphire FUE: precision you can't see","Mister Hair"],["fl-hair-signs","Signs your hair needs attention","Folik & Lumea"],["mh-patient-journey","From Fear to Clarity","Mister Hair"],["ms-3-questions","3 questions to ask before you begin","Miss Skin"],["mh-chlorine-salt","Chlorine and salt dry out both","Mister Hair"],["fl-expert-care","Expert care for hair and skin","Folik & Lumea"],["mh-intern-hiring","We're hiring: Social Media Intern","Mister Hair"],["ms-your-skin","Your skin. Your choice.","Miss Skin"],["fl-thai-post","Thai-language education post","Folik & Lumea"]];
+function fig(x,dup){return'<figure'+(dup?' aria-hidden="true"':'')+'><div class="frame"><img src="'+IMG[x[0]]+'" alt="'+(dup?'':esc(x[1]))+'" loading="lazy"></div><figcaption><span>'+esc(x[2])+'</span><b>'+esc(x[1])+'</b></figcaption></figure>'}
+[["#wallA",WALL.filter(function(_,i){return i%2===0})],["#wallB",WALL.filter(function(_,i){return i%2===1})]].forEach(function(r){
+  var set=r[1].concat(r[1]);/* ensure each half is wider than wide screens */
+  $(r[0]).innerHTML='<div class="wall-track">'+set.map(function(x){return fig(x)}).join("")+set.map(function(x){return fig(x,1)}).join("")+'</div>'});
+/* certificates */
+[["cert-coursera-google-ads","Google Ads for Beginners","Coursera project certificate, Feb 2025"],["cert-jis-python","Statistical Analysis using Python","JIS College of Engineering, Kalyani, Sep 2025"]].forEach(function(c){
+  $("#certs").appendChild(el("div",{class:"spot cert"},'<img src="'+IMG[c[0]]+'" alt="'+esc(c[1])+' certificate" loading="lazy"><div><b>'+esc(c[1])+'</b><span>'+esc(c[2])+'</span></div>'))});
+
+[["Mister Hair","Building a trust system for a 100-clinic ambition","A trust-led funnel for a hair restoration brand with 16 clinics across Karnataka, Andhra Pradesh and Telangana, aiming for 100 clinics in five years.",["Instagram audit","Recurring series: Doctor Reacts, Before You Transplant","Meta campaigns for PRP, GFC and exosome in four cities"]],
+ ["Miss Skin","Launching five clinics at once","A dermatology brand launched across Sadashiva Nagar, RR Nagar, HRBR Layout, HSR Layout and Jayanagar, with the launch event at JW Marriott, Bengaluru.",["Positioning: Assessment first. Always.","Root Protocol seven-step diagnostic content","Face of the Year contest and IV therapy brochure"]],
+ ["HEN Salon","From a 4.6-star reputation to a booking engine","Turning a single studio's offline reputation (4.6/5 from 292+ Magicpin reviews) into bookings from social.",["Transformation proof and artist-led education","Testimonials","Geo-targeted reels for HRBR Layout and Kalyan Nagar"]]
+].forEach(function(c){$("#cases").appendChild(el("div",{class:"spot case"},'<span class="client">'+c[0]+'</span><h3>'+c[1]+'</h3><p>'+c[2]+'</p><ul>'+c[3].map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul>'))});
+
+/* spotlight + magnetic */
+document.addEventListener("pointermove",function(e){
+  var s=e.target.closest&&e.target.closest(".spot");
+  if(s){var r=s.getBoundingClientRect();s.style.setProperty("--mx",(e.clientX-r.left)+"px");s.style.setProperty("--my",(e.clientY-r.top)+"px")}
+  var b=e.target.closest&&e.target.closest(".btn");
+  if(b){var q=b.getBoundingClientRect();b.style.setProperty("--x",(e.clientX-q.left)+"px");b.style.setProperty("--y",(e.clientY-q.top)+"px")}
+},{passive:true});
+if(fine&&!reduce)$$("[data-mag]").forEach(function(b){
+  b.addEventListener("pointermove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.18).toFixed(1)+"px,"+((e.clientY-r.top-r.height/2)*.3).toFixed(1)+"px)"});
+  b.addEventListener("pointerleave",function(){b.style.transform=""})});
+
+/* process bar */
+var pr=$("#proc");
+function procProg(){if(reduce)return;var r=pr.getBoundingClientRect(),p=(innerHeight*.9-r.top)/(r.height+innerHeight*.4);pr.style.setProperty("--p",Math.max(.03,Math.min(1,p)).toFixed(3))}
+function onS(){launchProg();procProg()}
+addEventListener("scroll",onS,{passive:true});addEventListener("resize",onS);onS();
+
+/* contact */
+var OPTS=["Business Registration Assistance","Company Incorporation","GST Registration Assistance","MSME / Udyam Registration","Trademark Assistance","Business Documentation","Digital Marketing","Social Media Management","Google Ads","Meta Ads","Website Development","Portfolio Development","Video Editing","Content Creation","Branding","Marketing Automation","SEO","Complete Business Launch Support","Other"];
+var fs=$("#f-service"),st=$("#status"),WA="919748989711",MAIL="managerialtalk@gmail.com";
+OPTS.forEach(function(o){fs.appendChild(el("option",{value:o},o))});
+function v(id){return $("#"+id).value.trim()}
+function msg(){var l=["Hello BizzTalks, I would like to discuss a project.","","Name: "+v("f-name")];
+  if(v("f-biz"))l.push("Business / brand: "+v("f-biz"));l.push("Email: "+v("f-email"));if(v("f-phone"))l.push("Phone: "+v("f-phone"));
+  l.push("Service required: "+(v("f-service")||"-"));if(v("f-budget"))l.push("Budget: "+v("f-budget"));l.push("","Project details:",v("f-details"));return l.join("\n")}
+function sync(){var m=msg(),s="Project enquiry: "+(v("f-service")||"BizzTalks")+(v("f-name")?" — "+v("f-name"):"");
+  $("#sendWa").href="https://wa.me/"+WA+"?text="+encodeURIComponent(m);$("#sendMail").href="mailto:"+MAIL+"?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(m)}
+function validate(){var ok=true,first=null;
+  [["f-name",function(x){return x.length>1}],["f-email",function(x){return/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(x)}],["f-service",function(x){return!!x}],["f-details",function(x){return x.length>4}]].forEach(function(r){
+    var f=$("#"+r[0]),w=f.closest(".f"),g=r[1](f.value.trim());w.classList.toggle("bad",!g);$(".err",w).hidden=g;f.setAttribute("aria-invalid",String(!g));if(!g){ok=false;first=first||f}});
+  if(first)first.focus();return ok}
+var form=$("#form");
+form.addEventListener("input",function(e){var w=e.target.closest(".f");if(w&&w.classList.contains("bad")){w.classList.remove("bad");$(".err",w).hidden=true}sync()});
+form.addEventListener("submit",function(e){e.preventDefault();validate()});
+["sendWa","sendMail"].forEach(function(id){$("#"+id).addEventListener("click",function(e){
+  if(!validate()){e.preventDefault();st.textContent="Fill in the highlighted fields, then send.";return}
+  sync();
+  if(id==="sendWa")st.textContent="Opening WhatsApp with your details filled in. Press send there to deliver it.";
+  else{st.textContent="Opening your email app with your details filled in. If nothing opens, your message has been copied: paste it into an email to "+MAIL+".";if(navigator.clipboard)navigator.clipboard.writeText(msg()).catch(function(){})}})});
+$("#sendCall").addEventListener("click",function(){st.textContent="Calling +91 97489 89711. If your device cannot place calls, dial the number shown alongside."});
+document.addEventListener("click",function(e){
+  var c=e.target.closest("[data-copy]");
+  if(c){var t=c.getAttribute("data-copy"),lab=c.textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){c.textContent="Copied";setTimeout(function(){c.textContent=lab},1600)}).catch(function(){var n=$(".v",c.closest(".card")),r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r)});return}
+  var q=e.target.closest("[data-enquire]");
+  if(q){fs.value=q.getAttribute("data-enquire");var n=q.getAttribute("data-note"),d=$("#f-details");if(n&&!d.value.trim())d.value="I am interested in: "+n+".";fs.closest(".f").classList.remove("bad");sync()}
+});
+sync();
+
+/* ---------- WebGL hero: a living particle sphere that unfolds into a ring as you scroll ---------- */
+(function(){
+  var cv=$("#gl");if(!window.THREE)return;var T=THREE,R;
+  try{R=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true})}catch(e){return}
+  if(!R.getContext())return;
+  R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+  var scene=new T.Scene(),cam=new T.PerspectiveCamera(36,1,.1,100);cam.position.z=9;
+  var N=innerWidth<700?7000:14000,pos=new Float32Array(N*3),ring=new Float32Array(N*3),rnd=new Float32Array(N),g=2.399963;
+  for(var i=0;i<N;i++){var y=1-(i/(N-1))*2,r=Math.sqrt(1-y*y),th=g*i;pos[i*3]=Math.cos(th)*r;pos[i*3+1]=y;pos[i*3+2]=Math.sin(th)*r;
+    var a=Math.random()*6.2832,band=Math.random(),rr=1.55+Math.pow(band,2)*1.1;ring[i*3]=Math.cos(a)*rr;ring[i*3+1]=(Math.random()-.5)*.06*(1+band*3);ring[i*3+2]=Math.sin(a)*rr;rnd[i]=Math.random()}
+  var geo=new T.BufferGeometry();geo.setAttribute("position",new T.BufferAttribute(pos,3));geo.setAttribute("aRing",new T.BufferAttribute(ring,3));geo.setAttribute("aRnd",new T.BufferAttribute(rnd,1));
+  var NOISE="vec3 m289(vec3 x){return x-floor(x*(1./289.))*289.;}vec4 m289(vec4 x){return x-floor(x*(1./289.))*289.;}vec4 perm(vec4 x){return m289(((x*34.)+1.)*x);}vec4 tis(vec4 r){return 1.79284291400159-.85373472095314*r;}"+
+   "float snoise(vec3 v){const vec2 C=vec2(1./6.,1./3.);const vec4 D=vec4(0.,.5,1.,2.);vec3 i=floor(v+dot(v,C.yyy));vec3 x0=v-i+dot(i,C.xxx);vec3 g=step(x0.yzx,x0.xyz);vec3 l=1.-g;vec3 i1=min(g.xyz,l.zxy);vec3 i2=max(g.xyz,l.zxy);vec3 x1=x0-i1+C.xxx;vec3 x2=x0-i2+C.yyy;vec3 x3=x0-D.yyy;i=m289(i);"+
+   "vec4 p=perm(perm(perm(i.z+vec4(0.,i1.z,i2.z,1.))+i.y+vec4(0.,i1.y,i2.y,1.))+i.x+vec4(0.,i1.x,i2.x,1.));float n_=.142857142857;vec3 ns=n_*D.wyz-D.xzx;vec4 j=p-49.*floor(p*ns.z*ns.z);vec4 x_=floor(j*ns.z);vec4 y_=floor(j-7.*x_);vec4 x=x_*ns.x+ns.yyyy;vec4 y=y_*ns.x+ns.yyyy;vec4 h=1.-abs(x)-abs(y);"+
+   "vec4 b0=vec4(x.xy,y.xy);vec4 b1=vec4(x.zw,y.zw);vec4 s0=floor(b0)*2.+1.;vec4 s1=floor(b1)*2.+1.;vec4 sh=-step(h,vec4(0.));vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy;vec4 a1=b1.xzyw+s1.xzyw*sh.zzww;vec3 p0=vec3(a0.xy,h.x);vec3 p1=vec3(a0.zw,h.y);vec3 p2=vec3(a1.xy,h.z);vec3 p3=vec3(a1.zw,h.w);"+
+   "vec4 nm=tis(vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3)));p0*=nm.x;p1*=nm.y;p2*=nm.z;p3*=nm.w;vec4 m=max(.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.);m=m*m;return 42.*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3)));}";
+  var mat=new T.ShaderMaterial({transparent:true,depthWrite:false,blending:T.AdditiveBlending,
+    uniforms:{uT:{value:0},uM:{value:0},uMouse:{value:new T.Vector2()},uPx:{value:R.getPixelRatio()}},
+    vertexShader:NOISE+"uniform float uT,uM,uPx;uniform vec2 uMouse;attribute vec3 aRing;attribute float aRnd;varying float vD,vR,vN;"+
+     "void main(){float n=snoise(position*1.6+vec3(uT*.18));vec3 sph=position*(1.55+n*.28+aRnd*.04);"+
+     "vec3 p=mix(sph,aRing*1.25,smoothstep(0.,1.,uM));float ca=cos(uT*.06),sa=sin(uT*.06);p.xz=mat2(ca,-sa,sa,ca)*p.xz;"+
+     "p.x+=uMouse.x*.35*(1.+n);p.y+=uMouse.y*.25*(1.+n);vec4 mv=modelViewMatrix*vec4(p,1.);gl_Position=projectionMatrix*mv;"+
+     "gl_PointSize=(1.4+aRnd*2.4+max(n,0.)*2.)*uPx*(7./-mv.z);vD=-mv.z;vR=aRnd;vN=n;}",
+    fragmentShader:"varying float vD,vR,vN;void main(){vec2 c=gl_PointCoord-.5;float d=length(c);if(d>.5)discard;float a=smoothstep(.5,0.,d);"+
+     "vec3 blue=vec3(.30,.49,1.),vio=vec3(.61,.48,1.),ice=vec3(.85,.9,1.);vec3 col=mix(blue,vio,clamp(vN*.8+.5,0.,1.));col=mix(col,ice,smoothstep(.85,1.,vR));"+
+     "float fog=smoothstep(12.,6.,vD);gl_FragColor=vec4(col,a*(.35+.65*fog)*.9);}"});
+  var pts=new T.Points(geo,mat),grp=new T.Group();grp.add(pts);grp.rotation.x=.35;scene.add(grp);
+  var core=new T.Mesh(new T.SphereGeometry(.5,32,32),new T.MeshBasicMaterial({color:0x4d7cff,transparent:true,opacity:.12,blending:T.AdditiveBlending}));grp.add(core);
+  var W,H,mx=0,my=0,tx=0,ty=0,vis=true,t0=performance.now(),hero=$("#home");
+  function size(){W=hero.clientWidth;H=hero.clientHeight;R.setSize(W,H,false);cam.aspect=W/H;
+    var narrow=W<820;grp.position.set(narrow?0:W>1200?2.4:1.8,narrow?1.25:.35,0);cam.position.z=narrow?10.5:9;cam.updateProjectionMatrix()}
+  addEventListener("pointermove",function(e){mx=e.clientX/innerWidth-.5;my=-(e.clientY/innerHeight-.5)},{passive:true});
+  function draw(now){var t=(now-t0)/1000,sp=Math.min(1,scrollY/(H*.8));tx+=(mx-tx)*.04;ty+=(my-ty)*.04;
+    mat.uniforms.uT.value=t;mat.uniforms.uM.value=sp;mat.uniforms.uMouse.value.set(tx,ty);grp.rotation.x=.35+sp*.9+ty*.2;grp.rotation.z=tx*.15;
+    core.scale.setScalar(1+Math.sin(t*1.4)*.08);R.render(scene,cam)}
+  function loop(now){if(vis)draw(now);requestAnimationFrame(loop)}
+  size();addEventListener("resize",function(){size();if(reduce)draw(t0+5000)});
+  new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(hero);
+  $(".hero-fallback").style.opacity=".35";
+  if(reduce)draw(t0+5000);else requestAnimationFrame(loop);
+})();
+})();
+</script>
+
+</body>
 </html>
